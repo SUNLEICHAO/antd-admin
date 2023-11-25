@@ -1,6 +1,9 @@
 # antd
 
 > [antd](https://www.figma.com/file/jErSsXK0LKbqsQ2HIa5JMn/aitschool---Ant-Design-Admin?type=design&node-id=71489-79105&mode=design&t=dLfVoZvYit4tABPY-0)
+> v0.01 基本结构
+> 
+
 
 ## 待解决
 
@@ -23,17 +26,17 @@
 |  ├ css
 |  |  ├ reset.css
 |  |  ├ login.css
-|  |  ├ register.css
-|  |  ├ layout.css
-|  |  ├ basic-form.css
-|  |  ├ step-form.css
-|  |  ├ advanced-form.css
-|  |  ├ search-list-articles.css
-|  |  ├ search-list-projects.css
-|  |  ├ search-list-applications.css
-|  |  ├ search-table.css
-|  |  └ workplace.css
+|  |  ├ .css
+|  |  ├ .css
+|  |  ├ .css
+|  |  ├ .css
+|  |  ├ .css
+|  |  ├ .css
+|  |  ├ .css
+|  |  ├ .css
+|  |  ├ .css
+|  |  └ .css
 |  ├ img
-|  |  └ index_logo.jpg
+|  |  └ s.jpg
 
 ```
