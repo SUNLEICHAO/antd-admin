@@ -24,13 +24,14 @@
     </div>
 
   </header>
+
   <div class="page-body">
     <div class="login-section">
-      <div class="login-hd">
-        <div class="login-hd__title active">Login</div>
-        <div class="login-hd__title">Sign up</div>
+      <div class="login-hd click-tab" id="click-tab">
+        <div class="login-hd__title click-tab-item active" data-index="0">Login</div>
+        <div class="login-hd__title click-tab-item" data-index="1">Sign up</div>
       </div>
-      <div class="login-bd">
+      <div class="login-bd click-content-item active">
         <div class="login-bd__username">
           <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0_180333_7437)">
@@ -69,13 +70,59 @@
           </form>
           <a href="javascript:;" class="login-bd__option-forgot">Forgot your password?</a>
         </div>
-
       </div>
+
+      <div class="login-bd click-content-item">
+        <div class="login-bd__username">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_180347_989)">
+              <path
+                d="M12.1444 -0.0358887H3.85868C3.22832 -0.0358887 2.71582 0.476611 2.71582 1.10697V14.8213C2.71582 15.4516 3.22832 15.9641 3.85868 15.9641H12.1444C12.7747 15.9641 13.2872 15.4516 13.2872 14.8213V1.10697C13.2872 0.476611 12.7747 -0.0358887 12.1444 -0.0358887ZM12.0015 14.6784H4.00153V1.24983H12.0015V14.6784ZM7.28725 12.857C7.28725 13.0464 7.3625 13.2281 7.49646 13.362C7.63041 13.496 7.81209 13.5713 8.00153 13.5713C8.19098 13.5713 8.37266 13.496 8.50661 13.362C8.64057 13.2281 8.71582 13.0464 8.71582 12.857C8.71582 12.6675 8.64057 12.4858 8.50661 12.3519C8.37266 12.2179 8.19098 12.1427 8.00153 12.1427C7.81209 12.1427 7.63041 12.2179 7.49646 12.3519C7.3625 12.4858 7.28725 12.6675 7.28725 12.857Z"
+                fill="#1890FF" />
+            </g>
+            <defs>
+              <clipPath id="clip0_180347_989">
+                <rect width="16" height="16" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+          <input type="text" class="login-bd__username-input" placeholder="username: admin or user">
+        </div>
+
+        <div class="login-bd__verification">
+
+          <div class="login-bd__password">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_180347_6304)">
+                <path
+                  d="M15.4305 1.71411H0.573382C0.25731 1.71411 0.00195312 1.96947 0.00195312 2.28554V13.7141C0.00195312 14.0302 0.25731 14.2855 0.573382 14.2855H15.4305C15.7466 14.2855 16.002 14.0302 16.002 13.7141V2.28554C16.002 1.96947 15.7466 1.71411 15.4305 1.71411ZM14.7162 3.69268V12.9998H1.28767V3.69268L0.79481 3.30875L1.4966 2.40697L2.26088 3.00161H13.7448L14.5091 2.40697L15.2109 3.30875L14.7162 3.69268ZM13.7448 2.99983L8.00195 7.46411L2.2591 2.99983L1.49481 2.40518L0.793025 3.30697L1.28588 3.6909L7.38588 8.43375C7.56131 8.57004 7.77713 8.64402 7.99928 8.64402C8.22142 8.64402 8.43724 8.57004 8.61267 8.43375L14.7162 3.69268L15.2091 3.30875L14.5073 2.40697L13.7448 2.99983Z"
+                  fill="#1890FF" />
+              </g>
+              <defs>
+                <clipPath id="clip0_180347_6304">
+                  <rect width="16" height="16" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <input type="text" class="login-bd__password-input" placeholder="password: ant.design">
+          </div>
+          <div class="login-bd__get">Get Code</div>
+        </div>
+
+        <div class="login-bd__option">
+          <form action="remember-me" class="login-bd__option-remember">
+            <input type="radio" name="remember-me" id="" class="login-bd__option-remember-radio">
+            Remember me
+          </form>
+          <a href="javascript:;" class="login-bd__option-forgot">Forgot your password?</a>
+        </div>
+      </div>
+
       <div class="login-ft">
         Sign in
       </div>
     </div>
-    <div class="signup-section"></div>
+    
     <div class="quick-section">
       <span class="quick-text">Quick Sign-in:</span>
       <span class="quick-icons">
@@ -101,6 +148,7 @@
       <a href="javascript:;" class="quick-link">Sign Up</a>
     </div>
   </div>
+
   <footer class="page-footer">
     <div class="footer-links">
       <a href="javascript:;" class="footer-link">Ant Design Pro</a>
@@ -113,6 +161,21 @@
       Copyright ©2020 Produced by Ant Finance Experience Technology Department
     </div>
   </footer>
+
+  <script>
+    // 为click-tab绑定事件
+    document.getElementById('click-tab').addEventListener('click', function (e) {
+      if (event.target.className.indexOf('login-hd__title click-tab-item') >= 0) {
+        // 被点击目标的标记数字
+        let index = e.target.dataset.index;
+        // 为所有的题目和内容绑定上click-tab/content-item属性，为点击目标设定active属性
+        document.querySelectorAll('.click-tab-item').forEach(e => e.setAttribute('class', 'login-hd__title click-tab-item'));
+        document.querySelectorAll('.click-content-item').forEach(e => e.setAttribute('class', 'login-bd click-content-item'));
+        document.querySelectorAll('.click-tab-item')[index].setAttribute('class', 'login-hd__title click-tab-item active');
+        document.querySelectorAll('.click-content-item')[index].setAttribute('class', 'login-bd click-content-item active');
+      }
+    });
+  </script>
 </body>
 
 </html>

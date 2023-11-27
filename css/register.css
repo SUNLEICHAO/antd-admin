@@ -1,0 +1,109 @@
+.register-section {
+  width: 368px;
+  display: flex;
+  flex-direction: column;
+}
+
+.register-title {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  margin-bottom: 22px;
+}
+
+.register-section input {
+  height: 40px;
+  padding: 8px 12px;
+  border-radius: 2px;
+  box-sizing: border-box;
+  border: 1px solid #D9D9D9;
+  line-height: 24px;
+  margin-bottom: 16px;
+}
+
+.register-section input::placeholder {
+  font-size: 16px;
+  line-height: 24px;
+  color: #00000040;
+}
+
+.register-phone {
+  display: flex;
+  height: 40px;
+  margin-bottom: 16px;
+}
+
+.register-phone__prefix {
+  width: 88px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  background-color: #fff;
+  border: 1px solid #D9D9D9;
+  border-right: none;
+}
+
+.register-phone__prefix svg {
+  margin-left: 11px;
+}
+
+input.register-phone__input {
+  flex: 1;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.register-verification {
+  display: flex;
+  justify-content: space-between;
+}
+
+input.register-verification__input {
+  flex: 1;
+  margin-bottom: 0;
+}
+
+.register-verification__get {
+  width: 109px;
+  padding: 6px 15px;
+  line-height: 26px;
+  text-align: center;
+  margin-left: 10px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border: 1px solid #D9D9D9;
+}
+
+.register-submit {
+  margin-top: 22px;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+.register-submit__confirm {
+  width: 196px;
+  height: 40px;
+  padding: 7px 15px;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 24px;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  background-color: #1890FF;
+  cursor: pointer;
+
+
+
+}
+
+.register-submit__exit {
+  width: 82px;
+  text-align: center;
+  border-radius: 2px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #1890FF;
+
+}

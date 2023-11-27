@@ -9,11 +9,63 @@
   <meta name="description" content="antd">
 
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/login.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/register.css">
 </head>
 
 <body>
+  <header class="page-header">
+    <div class="header-logo">
+      <img src="./img/index_logo.png" alt="" class="header-logo__img">
+      <span class="header-logo__text">Ant Design</span>
+    </div>
+    <div class="header-desc">
+      Ant Design is the most influential web design specification in Xihu district
+    </div>
 
+  </header>
+
+  <div class="page-body">
+    <div class="register-section">
+      <div class="register-title">Register</div>
+      <input type="text" class="register-email" placeholder="Email">
+      <input type="text" class="register-password" placeholder="Password(6 digits at least, case sensitive)">
+      <input type="text" class="register-comfirm" placeholder="Comfirm password">
+      <div class="register-phone">
+        <div class="register-phone__prefix">
+          +86
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M10.982 2.57104H9.97753C9.90923 2.57104 9.84494 2.60453 9.80477 2.65944L5.99986 7.90408L2.19494 2.65944C2.15477 2.60453 2.09048 2.57104 2.02218 2.57104H1.01771C0.930659 2.57104 0.879766 2.67015 0.930659 2.74113L5.65298 9.2514C5.82441 9.48712 6.1753 9.48712 6.34539 9.2514L11.0677 2.74113C11.1199 2.67015 11.0691 2.57104 10.982 2.57104Z"
+              fill="black" fill-opacity="0.25" />
+          </svg>
+        </div>
+        <input type="text" class="register-phone__input" placeholder="example">
+      </div>
+      <div class="register-verification">
+        <input type="text" class="register-verification__input" placeholder="Verification code">
+        <div class="register-verification__get">Get Code</div>
+      </div>
+      <div class="register-submit">
+        <div class="register-submit__confirm">Register</div>
+        <div class="register-submit__exit">existing</div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="page-footer">
+    <div class="footer-links">
+      <a href="javascript:;" class="footer-link">Ant Design Pro</a>
+      <a href="javascript:;" class="footer-link github">
+        <img src="./img/icon-github.png" alt="">
+      </a>
+      <a href="javascript:;" class="footer-link">Ant Design</a>
+    </div>
+    <div class="footer-copy">
+      Copyright ©2020 Produced by Ant Finance Experience Technology Department
+    </div>
+  </footer>
 </body>
 
 </html>

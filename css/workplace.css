@@ -1,0 +1,409 @@
+.page-header {
+  justify-content: space-between;
+  display: flex;
+  height: 48px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  background: #001529;
+  border-bottom: 1px red;
+  /* 问题，这种向内延申的box-sahdow类似border的效果 */
+  box-shadow: 0px -1px 0px 0px #F0F0F0 inset;
+}
+
+.header-action {
+  align-items: center;
+  display: flex;
+
+}
+
+.header-action__search,
+.header-action__query,
+.header-action__notice,
+.header-action__user,
+.header-action__lang {
+  padding: 0 12px;
+  cursor: pointer;
+}
+
+
+.header-action__notice {
+  position: relative;
+}
+
+.header-action__notice-num {
+  position: absolute;
+  top: -10px;
+  left: 26px;
+  padding: 0 8px;
+  border-radius: 8px;
+  background-color: red;
+  font-size: 12px;
+  line-height: 20px;
+  color: #fff;
+}
+
+.header-action__user {
+  display: flex;
+  align-items: center;
+}
+
+.header-action__user-avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #1890FF;
+  margin-right: 8px;
+
+}
+
+.header-action__user-name {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  color: #fff;
+}
+
+.page-body {
+  height: calc(100vh - 48px);
+  display: flex;
+}
+
+.sider-section {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  width: 208px;
+  height: 100%;
+  /* background-color: #00000026; */
+  background-color: #fff;
+}
+
+.workplace-section {
+  background-color: #f0f2f5;
+}
+
+.workplace-section {
+  flex: 1;
+}
+
+.sider-item {
+  overflow: hidden;
+}
+
+.sider-item__title {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  padding: 0 16px;
+  cursor: pointer;
+}
+
+.sider-item__title-text {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.sider-item.active .sider-item__title {
+  color: #1890FF;
+}
+
+.sider-item.active .sider-item__title-arrow {
+  transform: rotate(180deg);
+  transition: all .2s ease;
+}
+
+/* .sider-item:hover .sider-item__arrow {
+  transform: rotate(180deg);
+} */
+
+
+.sider-fold svg {
+  cursor: pointer;
+}
+
+.sider-item__options {
+  /* 问题，折叠动画 */
+  /* flex-direction: column;
+  display: flex; */
+  /*  */
+  display: grid;
+  overflow: hidden;
+  grid-template-rows: 0fr;
+  /* grid */
+  margin-top: 4px;
+  /* height: 0px; */
+  transition: all .3s ease;
+}
+
+.sider-item:hover .sider-item__options {
+  height: 100%;
+}
+
+.sider-item__option {
+  /* min-height: 0; */
+  padding-left: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  margin-bottom: 8px;
+}
+
+.sider-item__option.active {
+  background-color: #E6F7FF;
+  color: #1890FF;
+  border-right: 3px solid #1890FF
+}
+
+.sider-fold {
+  padding: 0 16px;
+  line-height: 40px;
+  box-shadow: 0px 1px 0px 0px #F0F0F0 inset;
+}
+
+.workplace-header {
+  /* display: flex; */
+  padding: 12px 24px 16px;
+  background-color: lightcoral;
+}
+
+.workplace-path {
+  font-size: 14px;
+  line-height: 22px;
+  display: flex;
+  color: #00000073;
+  margin-bottom: 12px;
+}
+
+.workplace-path .seprate {
+  margin: 0 8px;
+}
+
+.workplace-path-section:last-child {
+  color: #000000d9;
+}
+
+.workplace-title {
+  padding: 8px 0;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500;
+}
+
+.workplace-account {
+  display: flex;
+}
+
+.workplace-account-avatar {
+  width: 72px;
+  height: 72px;
+  margin-right: 24px;
+}
+
+.workplace-account-greet__main {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 28px;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+/* 问题，行宽和原设计的不一样 */
+.workplace-account-greet__sub {
+  line-height: 22px;
+  font-size: 14px;
+  color: #00000073;
+  font-family: Roboto;
+  letter-spacing: 0em;
+}
+
+.workplace-account-notices {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.workplace-account-notice__name {
+  font-size: 14px;
+  line-height: 22px;
+  color: #00000073;
+}
+
+.workplace-account-notice__number {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000D9;
+}
+
+.workplace-account-notices .seprate {
+  height: 32px;
+  width: 1px;
+  background-color: #0000000F;
+  margin: 0 32px;
+}
+
+.workplace-body {
+  margin: 24px;
+  display: flex;
+  gap: 24px;
+  justify-content: space-between;
+}
+
+.workplace-main-container {
+  flex: 1;
+}
+
+.workplace-main-project {
+  background-color: #fff;
+  border: 1px solid #f0f0f0;
+}
+
+.workplace-project-title {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  padding: 0 24px;
+}
+
+.module-title {
+  height: 56px;
+  padding: 16px 0px;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+}
+
+.workplace-project-more {
+  font-size: 14px;
+  line-height: 22px;
+  color: #1890FF;
+
+}
+
+.workplace-project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.workplace-project-item {
+  padding: 24px;
+  border-right: 1px solid #f0f0f0;
+  border-top: 1px solid #f0f0f0;
+
+}
+
+.workplace-project-item:nth-child(3n) {
+  border-right: none;
+}
+
+
+.workplace-project-item__name {
+  display: flex;
+  align-items: center;
+}
+
+.workplace-project-item__name-logo {
+  margin-right: 12px;
+}
+
+.workplace-project-item__name-text {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.workplace-project-item__desc {
+  font-size: 13px;
+  line-height: 17px;
+  color: #00000073;
+  margin: 8px 0;
+
+}
+
+.workplace-project-item__info {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  line-height: 20px;
+  color: #00000073;
+}
+
+.workplace-project-item__info-time {
+  color: #00000040;
+}
+
+
+.workplace-main-activities {
+  margin-top: 24px;
+  background-color: #fff;
+}
+
+.workplace-activities-title,
+.workplace-quick-title {
+
+  padding: 16px 24px;
+  border-bottom: 1px solid red;
+}
+
+.workplace-activities-list {
+  padding: 24px 36px;
+}
+
+.workplace-activities-item {
+  align-items: flex-start;
+  display: flex;
+  padding: 12px 0;
+  /* 问题，这种究竟是边框，还是boxshadow */
+  box-shadow: 0px -1px 0px 0px #F0F0F0 inset;
+}
+
+.workplace-activities-item__content {
+  margin-left: 16px;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.workplace-activities-item__content-text {
+  margin-bottom: 4px;
+}
+
+.workplace-activities-item__content-text .key {
+  color: #1890FF;
+}
+
+.workplace-activities-item__content-time {
+  color: #00000073;
+}
+
+.workplace-sider-container {
+  flex-shrink: 0;
+  width: 379px;
+}
+
+.workplace-sider-quick {
+  background-color: #fff;
+}
+
+.workplace-quick-links {
+  display: flex;
+  padding: 24px;
+  flex-wrap: wrap;
+}
+
+.workplace-quick-link {
+  font-size: 14px;
+  line-height: 22px;
+  padding: 0 4px;
+  /* margin-right: 2px; */
+}
+
+.workplace-quick-more {
+  align-items: center;
+  display: flex;
+  padding: 0px 8px;
+  font-size: 14px;
+  line-height: 22px;
+  border-radius: 2px;
+  color: #1890FF;
+  border: 1px #1890FF solid;
+}

@@ -9,11 +9,542 @@
   <meta name="description" content="antd">
 
   <link rel="stylesheet" href="./css/reset.css">
-  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/workplace.css">
 </head>
 
 <body>
+  <header class="page-header">
+    <div class="header-logo">
+      <img src="./img/index-logo-big.png" alt="" class="header-logo-img">
+      <div class="header-logo-text"></div>
+    </div>
 
+    <div class="header-action">
+      <div class="header-action__search">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_180347_6533)">
+            <path
+              d="M13.2118 12.3535L9.15396 8.29565C9.78364 7.48159 10.1243 6.48627 10.1243 5.4394C10.1243 4.18627 9.6352 3.01127 8.75083 2.12534C7.86645 1.2394 6.68833 0.7519 5.43677 0.7519C4.1852 0.7519 3.00708 1.24096 2.1227 2.12534C1.23677 3.00971 0.749268 4.18627 0.749268 5.4394C0.749268 6.69096 1.23833 7.86909 2.1227 8.75346C3.00708 9.6394 4.18364 10.1269 5.43677 10.1269C6.48364 10.1269 7.47739 9.78627 8.29146 9.15815L12.3493 13.2144C12.3612 13.2263 12.3753 13.2357 12.3908 13.2422C12.4064 13.2486 12.4231 13.252 12.4399 13.252C12.4567 13.252 12.4734 13.2486 12.4889 13.2422C12.5045 13.2357 12.5186 13.2263 12.5305 13.2144L13.2118 12.5347C13.2237 12.5228 13.2331 12.5087 13.2396 12.4931C13.246 12.4776 13.2493 12.4609 13.2493 12.4441C13.2493 12.4273 13.246 12.4106 13.2396 12.395C13.2331 12.3795 13.2237 12.3654 13.2118 12.3535ZM7.91177 7.9144C7.24927 8.57534 6.37114 8.9394 5.43677 8.9394C4.50239 8.9394 3.62427 8.57534 2.96177 7.9144C2.30083 7.2519 1.93677 6.37377 1.93677 5.4394C1.93677 4.50502 2.30083 3.62534 2.96177 2.9644C3.62427 2.30346 4.50239 1.9394 5.43677 1.9394C6.37114 1.9394 7.25083 2.3019 7.91177 2.9644C8.57271 3.6269 8.93677 4.50502 8.93677 5.4394C8.93677 6.37377 8.57271 7.25346 7.91177 7.9144Z"
+              fill="white" />
+          </g>
+          <defs>
+            <clipPath id="clip0_180347_6533">
+              <rect width="14" height="14" fill="white" transform="translate(-0.000976562)" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+
+      <div class="header-action__query">
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_180347_6536)">
+            <path
+              d="M6.99902 0C3.1334 0 -0.000976562 3.13437 -0.000976562 7C-0.000976562 10.8656 3.1334 14 6.99902 14C10.8646 14 13.999 10.8656 13.999 7C13.999 3.13437 10.8646 0 6.99902 0ZM6.99902 12.8125C3.78965 12.8125 1.18652 10.2094 1.18652 7C1.18652 3.79063 3.78965 1.1875 6.99902 1.1875C10.2084 1.1875 12.8115 3.79063 12.8115 7C12.8115 10.2094 10.2084 12.8125 6.99902 12.8125Z"
+              fill="white" />
+            <path
+              d="M8.74253 3.94795C8.27378 3.53701 7.65503 3.31201 6.99878 3.31201C6.34253 3.31201 5.72378 3.53857 5.25503 3.94795C4.76753 4.37451 4.49878 4.94795 4.49878 5.56201V5.68076C4.49878 5.74951 4.55503 5.80576 4.62378 5.80576H5.37378C5.44253 5.80576 5.49878 5.74951 5.49878 5.68076V5.56201C5.49878 4.87295 6.17222 4.31201 6.99878 4.31201C7.82534 4.31201 8.49878 4.87295 8.49878 5.56201C8.49878 6.04795 8.15503 6.49326 7.62222 6.69795C7.29097 6.82451 7.00972 7.04639 6.80815 7.33701C6.60347 7.63389 6.49722 7.99014 6.49722 8.35107V8.68701C6.49722 8.75576 6.55347 8.81201 6.62222 8.81201H7.37222C7.44097 8.81201 7.49722 8.75576 7.49722 8.68701V8.33232C7.49803 8.18064 7.54452 8.03272 7.63065 7.90785C7.71677 7.78298 7.83853 7.68697 7.98003 7.63232C8.90191 7.27764 9.49722 6.46514 9.49722 5.56201C9.49878 4.94795 9.23003 4.37451 8.74253 3.94795ZM6.37378 10.437C6.37378 10.6028 6.43963 10.7617 6.55684 10.879C6.67405 10.9962 6.83302 11.062 6.99878 11.062C7.16454 11.062 7.32351 10.9962 7.44072 10.879C7.55793 10.7617 7.62378 10.6028 7.62378 10.437C7.62378 10.2713 7.55793 10.1123 7.44072 9.99507C7.32351 9.87786 7.16454 9.81201 6.99878 9.81201C6.83302 9.81201 6.67405 9.87786 6.55684 9.99507C6.43963 10.1123 6.37378 10.2713 6.37378 10.437Z"
+              fill="white" />
+          </g>
+          <defs>
+            <clipPath id="clip0_180347_6536">
+              <rect width="14" height="14" fill="white" transform="translate(-0.000976562)" />
+            </clipPath>
+          </defs>
+        </svg>
+
+      </div>
+
+      <div class="header-action__notice">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M17.4276 16.5692H16.999V10.4978C16.999 7.97813 15.1365 5.89599 12.7133 5.54956V4.85492C12.7133 4.46028 12.3937 4.14063 11.999 4.14063C11.6044 4.14063 11.2847 4.46028 11.2847 4.85492V5.54956C8.86152 5.89599 6.99902 7.97813 6.99902 10.4978V16.5692H6.57045C6.25438 16.5692 5.99902 16.8246 5.99902 17.1406V17.7121C5.99902 17.7906 6.06331 17.8549 6.14188 17.8549H9.99902C9.99902 18.9585 10.8955 19.8549 11.999 19.8549C13.1026 19.8549 13.999 18.9585 13.999 17.8549H17.8562C17.9347 17.8549 17.999 17.7906 17.999 17.7121V17.1406C17.999 16.8246 17.7437 16.5692 17.4276 16.5692ZM11.999 18.7121C11.5258 18.7121 11.1419 18.3281 11.1419 17.8549H12.8562C12.8562 18.3281 12.4722 18.7121 11.999 18.7121ZM8.28474 16.5692V10.4978C8.28474 9.50492 8.67045 8.57278 9.37224 7.87099C10.074 7.1692 11.0062 6.78349 11.999 6.78349C12.9919 6.78349 13.924 7.1692 14.6258 7.87099C15.3276 8.57278 15.7133 9.50492 15.7133 10.4978V16.5692H8.28474Z"
+            fill="white" />
+        </svg>
+        <span class="header-action__notice-num">11</span>
+
+      </div>
+
+      <div class="header-action__user">
+        <div class="header-action__user-avatar">
+          <img src="./img/avatar-small.png" alt="">
+        </div>
+        <div class="header-action__user-name">Serati Ma</div>
+      </div>
+
+      <div class="header-action__lang">
+        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_180347_6554)">
+            <path
+              d="M9.65287 11.3032L7.74787 9.4207L7.77037 9.39819C9.07537 7.94319 10.0054 6.27069 10.5529 4.50069H12.7504V3.00069H7.50037V1.50069H6.00037V3.00069H0.750366V4.49319H9.12787C8.62537 5.94069 7.83037 7.3132 6.75037 8.5132C6.05287 7.74069 5.47537 6.89319 5.01787 6.00069H3.51787C4.06537 7.22319 4.81537 8.3782 5.75287 9.4207L1.93537 13.1857L3.00037 14.2507L6.75037 10.5007L9.08287 12.8332L9.65287 11.3032ZM13.8754 7.50069H12.3754L9.00037 16.5007H10.5004L11.3404 14.2507H14.9029L15.7504 16.5007H17.2504L13.8754 7.50069ZM11.9104 12.7507L13.1254 9.50319L14.3404 12.7507H11.9104Z"
+              fill="white" />
+          </g>
+          <defs>
+            <clipPath id="clip0_180347_6554">
+              <rect width="18" height="18" fill="white" />
+            </clipPath>
+          </defs>
+        </svg>
+      </div>
+    </div>
+  </header>
+
+  <div class="page-body">
+    <div class="sider-section">
+      <div class="sider-list">
+        <div class="sider-item active">
+          <div class="sider-item__title">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_180347_6088)">
+                <rect width="14" height="14" fill="white" fill-opacity="0.01" />
+                <g clip-path="url(#clip1_180347_6088)">
+                  <path
+                    d="M13.45 5.02702C13.0986 4.19532 12.5892 3.43969 11.95 2.80202C11.3123 2.16282 10.5567 1.6534 9.725 1.30202C8.86094 0.936397 7.94531 0.752022 7 0.752022C6.05469 0.752022 5.13906 0.936397 4.275 1.30202C3.4433 1.6534 2.68767 2.16282 2.05 2.80202C1.41079 3.43969 0.901382 4.19532 0.55 5.02702C0.184375 5.89109 0 6.80671 0 7.75202C0 9.82546 0.910937 11.7786 2.49844 13.113L2.525 13.1348C2.61563 13.2098 2.72969 13.252 2.84687 13.252H11.1547C11.2719 13.252 11.3859 13.2098 11.4766 13.1348L11.5031 13.113C13.0891 11.7786 14 9.82546 14 7.75202C14 6.80671 13.8141 5.89109 13.45 5.02702ZM10.8969 12.0645H3.10313C2.49937 11.5201 2.01682 10.8549 1.68681 10.1119C1.35679 9.369 1.18667 8.56497 1.1875 7.75202C1.1875 6.1989 1.79219 4.73952 2.89062 3.64265C3.98906 2.54421 5.44844 1.93952 7 1.93952C8.55313 1.93952 10.0125 2.54421 11.1094 3.64265C12.2078 4.74108 12.8125 6.20046 12.8125 7.75202C12.8125 9.40202 12.1172 10.963 10.8969 12.0645ZM8.74219 5.58796C8.71869 5.5647 8.68697 5.55165 8.65391 5.55165C8.62084 5.55165 8.58912 5.5647 8.56563 5.58796L7.24531 6.90827C6.95312 6.83015 6.62969 6.90515 6.4 7.13484C6.31865 7.21604 6.2541 7.31248 6.21007 7.41865C6.16603 7.52483 6.14336 7.63864 6.14336 7.75358C6.14336 7.86853 6.16603 7.98234 6.21007 8.08852C6.2541 8.19469 6.31865 8.29114 6.4 8.37234C6.4812 8.45369 6.57765 8.51823 6.68382 8.56227C6.78999 8.60631 6.90381 8.62897 7.01875 8.62897C7.13369 8.62897 7.24751 8.60631 7.35368 8.56227C7.45985 8.51823 7.5563 8.45369 7.6375 8.37234C7.74632 8.26384 7.82458 8.12855 7.86436 7.98012C7.90414 7.83169 7.90404 7.6754 7.86406 7.52702L9.18437 6.20671C9.23281 6.15827 9.23281 6.07858 9.18437 6.03015L8.74219 5.58796ZM6.65625 4.00202H7.34375C7.4125 4.00202 7.46875 3.94577 7.46875 3.87702V2.62702C7.46875 2.55827 7.4125 2.50202 7.34375 2.50202H6.65625C6.5875 2.50202 6.53125 2.55827 6.53125 2.62702V3.87702C6.53125 3.94577 6.5875 4.00202 6.65625 4.00202ZM10.7188 7.40827V8.09577C10.7188 8.16452 10.775 8.22077 10.8438 8.22077H12.0938C12.1625 8.22077 12.2188 8.16452 12.2188 8.09577V7.40827C12.2188 7.33952 12.1625 7.28327 12.0938 7.28327H10.8438C10.775 7.28327 10.7188 7.33952 10.7188 7.40827ZM10.9172 4.32702L10.4312 3.84108C10.4078 3.81782 10.376 3.80477 10.343 3.80477C10.3099 3.80477 10.2782 3.81782 10.2547 3.84108L9.37031 4.72546C9.34705 4.74895 9.334 4.78068 9.334 4.81374C9.334 4.8468 9.34705 4.87853 9.37031 4.90202L9.85625 5.38796C9.90469 5.4364 9.98438 5.4364 10.0328 5.38796L10.9172 4.50358C10.9656 4.45515 10.9656 4.37546 10.9172 4.32702ZM3.75156 3.84108C3.72807 3.81782 3.69634 3.80477 3.66328 3.80477C3.63022 3.80477 3.59849 3.81782 3.575 3.84108L3.08906 4.32702C3.0658 4.35052 3.05275 4.38224 3.05275 4.4153C3.05275 4.44837 3.0658 4.48009 3.08906 4.50358L3.97344 5.38796C4.02187 5.4364 4.10156 5.4364 4.15 5.38796L4.63594 4.90202C4.68438 4.85358 4.68438 4.7739 4.63594 4.72546L3.75156 3.84108ZM3.09375 7.28327H1.84375C1.775 7.28327 1.71875 7.33952 1.71875 7.40827V8.09577C1.71875 8.16452 1.775 8.22077 1.84375 8.22077H3.09375C3.1625 8.22077 3.21875 8.16452 3.21875 8.09577V7.40827C3.21875 7.33952 3.1625 7.28327 3.09375 7.28327Z"
+                    fill="#1890FF" />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_180347_6088">
+                  <rect width="14" height="14" fill="white" />
+                </clipPath>
+                <clipPath id="clip1_180347_6088">
+                  <rect width="14" height="14" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="sider-item__title-text">Dashbaord</span>
+            <svg class="sider-item__title-arrow" width="10" height="10" viewBox="0 0 10 10" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.41427 3.05545C2.02374 2.66492 1.46972 2.58578 1.17683 2.87867C0.883935 3.17157 0.963081 3.72558 1.35361 4.11611L4.18203 6.94454C4.42536 7.18786 4.73216 7.3103 4.99971 7.29719C5.26737 7.31045 5.57436 7.18801 5.81782 6.94456L8.64624 4.11613C9.03677 3.7256 9.11591 3.17158 8.82302 2.87869C8.53013 2.5858 7.97611 2.66494 7.58558 3.05547L4.99993 5.64112L2.41427 3.05545Z"
+                fill="black" fill-opacity="0.85" />
+            </svg>
+          </div>
+          <div class="sider-item__options">
+            <a href="javascript:;" class="sider-item__option active">Analysis</a>
+            <a href="javascript:;" class="sider-item__option">Monitor</a>
+            <a href="javascript:;" class="sider-item__option">Workplace</a>
+          </div>
+        </div>
+
+        <div class="sider-item">
+          <div class="sider-item__title">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_180347_6110)">
+                <rect width="14" height="14" fill="white" fill-opacity="0.01" />
+                <g clip-path="url(#clip1_180347_6110)">
+                  <path
+                    d="M13.1252 6.99869H12.2502C12.1815 6.99869 12.1252 7.05494 12.1252 7.12369V12.1237H1.87524V1.87369H6.87524C6.94399 1.87369 7.00024 1.81744 7.00024 1.74869V0.873688C7.00024 0.804938 6.94399 0.748688 6.87524 0.748688H1.25024C0.973682 0.748688 0.750244 0.972125 0.750244 1.24869V12.7487C0.750244 13.0253 0.973682 13.2487 1.25024 13.2487H12.7502C13.0268 13.2487 13.2502 13.0253 13.2502 12.7487V7.12369C13.2502 7.05494 13.194 6.99869 13.1252 6.99869Z"
+                    fill="black" fill-opacity="0.85" />
+                  <path
+                    d="M4.56108 7.3565L4.53139 9.21431C4.52983 9.35337 4.64233 9.46744 4.78139 9.46744H4.78764L6.63139 9.42212C6.66264 9.42056 6.69389 9.40806 6.71577 9.38619L13.2142 2.90181C13.2626 2.85338 13.2626 2.77369 13.2142 2.72525L11.272 0.784625C11.247 0.759625 11.2158 0.748688 11.183 0.748688C11.1501 0.748688 11.1189 0.761188 11.0939 0.784625L4.59702 7.269C4.57445 7.2926 4.56161 7.32385 4.56108 7.3565ZM5.55327 7.72525L11.183 2.10806L11.8892 2.81275L6.25639 8.43306L5.54233 8.45025L5.55327 7.72525Z"
+                    fill="black" fill-opacity="0.85" />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_180347_6110">
+                  <rect width="14" height="14" fill="white" />
+                </clipPath>
+                <clipPath id="clip1_180347_6110">
+                  <rect width="14" height="14" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="sider-item__title-text">Form</span>
+            <svg class="sider-item__title-arrow" width="10" height="10" viewBox="0 0 10 10" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.41427 3.05545C2.02374 2.66492 1.46972 2.58578 1.17683 2.87867C0.883935 3.17157 0.963081 3.72558 1.35361 4.11611L4.18203 6.94454C4.42536 7.18786 4.73216 7.3103 4.99971 7.29719C5.26737 7.31045 5.57436 7.18801 5.81782 6.94456L8.64624 4.11613C9.03677 3.7256 9.11591 3.17158 8.82302 2.87869C8.53013 2.5858 7.97611 2.66494 7.58558 3.05547L4.99993 5.64112L2.41427 3.05545Z"
+                fill="black" fill-opacity="0.85" />
+            </svg>
+          </div>
+        </div>
+        <div class="sider-item">
+          <div class="sider-item__title">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_180347_6110)">
+                <rect width="14" height="14" fill="white" fill-opacity="0.01" />
+                <g clip-path="url(#clip1_180347_6110)">
+                  <path
+                    d="M13.1252 6.99869H12.2502C12.1815 6.99869 12.1252 7.05494 12.1252 7.12369V12.1237H1.87524V1.87369H6.87524C6.94399 1.87369 7.00024 1.81744 7.00024 1.74869V0.873688C7.00024 0.804938 6.94399 0.748688 6.87524 0.748688H1.25024C0.973682 0.748688 0.750244 0.972125 0.750244 1.24869V12.7487C0.750244 13.0253 0.973682 13.2487 1.25024 13.2487H12.7502C13.0268 13.2487 13.2502 13.0253 13.2502 12.7487V7.12369C13.2502 7.05494 13.194 6.99869 13.1252 6.99869Z"
+                    fill="black" fill-opacity="0.85" />
+                  <path
+                    d="M4.56108 7.3565L4.53139 9.21431C4.52983 9.35337 4.64233 9.46744 4.78139 9.46744H4.78764L6.63139 9.42212C6.66264 9.42056 6.69389 9.40806 6.71577 9.38619L13.2142 2.90181C13.2626 2.85338 13.2626 2.77369 13.2142 2.72525L11.272 0.784625C11.247 0.759625 11.2158 0.748688 11.183 0.748688C11.1501 0.748688 11.1189 0.761188 11.0939 0.784625L4.59702 7.269C4.57445 7.2926 4.56161 7.32385 4.56108 7.3565ZM5.55327 7.72525L11.183 2.10806L11.8892 2.81275L6.25639 8.43306L5.54233 8.45025L5.55327 7.72525Z"
+                    fill="black" fill-opacity="0.85" />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_180347_6110">
+                  <rect width="14" height="14" fill="white" />
+                </clipPath>
+                <clipPath id="clip1_180347_6110">
+                  <rect width="14" height="14" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="sider-item__title-text">Form</span>
+            <svg class="sider-item__title-arrow" width="10" height="10" viewBox="0 0 10 10" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.41427 3.05545C2.02374 2.66492 1.46972 2.58578 1.17683 2.87867C0.883935 3.17157 0.963081 3.72558 1.35361 4.11611L4.18203 6.94454C4.42536 7.18786 4.73216 7.3103 4.99971 7.29719C5.26737 7.31045 5.57436 7.18801 5.81782 6.94456L8.64624 4.11613C9.03677 3.7256 9.11591 3.17158 8.82302 2.87869C8.53013 2.5858 7.97611 2.66494 7.58558 3.05547L4.99993 5.64112L2.41427 3.05545Z"
+                fill="black" fill-opacity="0.85" />
+            </svg>
+          </div>
+        </div>
+        <div class="sider-item">
+          <div class="sider-item__title">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_180347_6110)">
+                <rect width="14" height="14" fill="white" fill-opacity="0.01" />
+                <g clip-path="url(#clip1_180347_6110)">
+                  <path
+                    d="M13.1252 6.99869H12.2502C12.1815 6.99869 12.1252 7.05494 12.1252 7.12369V12.1237H1.87524V1.87369H6.87524C6.94399 1.87369 7.00024 1.81744 7.00024 1.74869V0.873688C7.00024 0.804938 6.94399 0.748688 6.87524 0.748688H1.25024C0.973682 0.748688 0.750244 0.972125 0.750244 1.24869V12.7487C0.750244 13.0253 0.973682 13.2487 1.25024 13.2487H12.7502C13.0268 13.2487 13.2502 13.0253 13.2502 12.7487V7.12369C13.2502 7.05494 13.194 6.99869 13.1252 6.99869Z"
+                    fill="black" fill-opacity="0.85" />
+                  <path
+                    d="M4.56108 7.3565L4.53139 9.21431C4.52983 9.35337 4.64233 9.46744 4.78139 9.46744H4.78764L6.63139 9.42212C6.66264 9.42056 6.69389 9.40806 6.71577 9.38619L13.2142 2.90181C13.2626 2.85338 13.2626 2.77369 13.2142 2.72525L11.272 0.784625C11.247 0.759625 11.2158 0.748688 11.183 0.748688C11.1501 0.748688 11.1189 0.761188 11.0939 0.784625L4.59702 7.269C4.57445 7.2926 4.56161 7.32385 4.56108 7.3565ZM5.55327 7.72525L11.183 2.10806L11.8892 2.81275L6.25639 8.43306L5.54233 8.45025L5.55327 7.72525Z"
+                    fill="black" fill-opacity="0.85" />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_180347_6110">
+                  <rect width="14" height="14" fill="white" />
+                </clipPath>
+                <clipPath id="clip1_180347_6110">
+                  <rect width="14" height="14" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="sider-item__title-text">Form</span>
+            <svg class="sider-item__title-arrow" width="10" height="10" viewBox="0 0 10 10" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.41427 3.05545C2.02374 2.66492 1.46972 2.58578 1.17683 2.87867C0.883935 3.17157 0.963081 3.72558 1.35361 4.11611L4.18203 6.94454C4.42536 7.18786 4.73216 7.3103 4.99971 7.29719C5.26737 7.31045 5.57436 7.18801 5.81782 6.94456L8.64624 4.11613C9.03677 3.7256 9.11591 3.17158 8.82302 2.87869C8.53013 2.5858 7.97611 2.66494 7.58558 3.05547L4.99993 5.64112L2.41427 3.05545Z"
+                fill="black" fill-opacity="0.85" />
+            </svg>
+          </div>
+        </div>
+        <div class="sider-item">
+          <div class="sider-item__title">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_180347_6110)">
+                <rect width="14" height="14" fill="white" fill-opacity="0.01" />
+                <g clip-path="url(#clip1_180347_6110)">
+                  <path
+                    d="M13.1252 6.99869H12.2502C12.1815 6.99869 12.1252 7.05494 12.1252 7.12369V12.1237H1.87524V1.87369H6.87524C6.94399 1.87369 7.00024 1.81744 7.00024 1.74869V0.873688C7.00024 0.804938 6.94399 0.748688 6.87524 0.748688H1.25024C0.973682 0.748688 0.750244 0.972125 0.750244 1.24869V12.7487C0.750244 13.0253 0.973682 13.2487 1.25024 13.2487H12.7502C13.0268 13.2487 13.2502 13.0253 13.2502 12.7487V7.12369C13.2502 7.05494 13.194 6.99869 13.1252 6.99869Z"
+                    fill="black" fill-opacity="0.85" />
+                  <path
+                    d="M4.56108 7.3565L4.53139 9.21431C4.52983 9.35337 4.64233 9.46744 4.78139 9.46744H4.78764L6.63139 9.42212C6.66264 9.42056 6.69389 9.40806 6.71577 9.38619L13.2142 2.90181C13.2626 2.85338 13.2626 2.77369 13.2142 2.72525L11.272 0.784625C11.247 0.759625 11.2158 0.748688 11.183 0.748688C11.1501 0.748688 11.1189 0.761188 11.0939 0.784625L4.59702 7.269C4.57445 7.2926 4.56161 7.32385 4.56108 7.3565ZM5.55327 7.72525L11.183 2.10806L11.8892 2.81275L6.25639 8.43306L5.54233 8.45025L5.55327 7.72525Z"
+                    fill="black" fill-opacity="0.85" />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_180347_6110">
+                  <rect width="14" height="14" fill="white" />
+                </clipPath>
+                <clipPath id="clip1_180347_6110">
+                  <rect width="14" height="14" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="sider-item__title-text">Form</span>
+            <svg class="sider-item__title-arrow" width="10" height="10" viewBox="0 0 10 10" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.41427 3.05545C2.02374 2.66492 1.46972 2.58578 1.17683 2.87867C0.883935 3.17157 0.963081 3.72558 1.35361 4.11611L4.18203 6.94454C4.42536 7.18786 4.73216 7.3103 4.99971 7.29719C5.26737 7.31045 5.57436 7.18801 5.81782 6.94456L8.64624 4.11613C9.03677 3.7256 9.11591 3.17158 8.82302 2.87869C8.53013 2.5858 7.97611 2.66494 7.58558 3.05547L4.99993 5.64112L2.41427 3.05545Z"
+                fill="black" fill-opacity="0.85" />
+            </svg>
+          </div>
+        </div>
+        <div class="sider-item">
+          <div class="sider-item__title">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_180347_6110)">
+                <rect width="14" height="14" fill="white" fill-opacity="0.01" />
+                <g clip-path="url(#clip1_180347_6110)">
+                  <path
+                    d="M13.1252 6.99869H12.2502C12.1815 6.99869 12.1252 7.05494 12.1252 7.12369V12.1237H1.87524V1.87369H6.87524C6.94399 1.87369 7.00024 1.81744 7.00024 1.74869V0.873688C7.00024 0.804938 6.94399 0.748688 6.87524 0.748688H1.25024C0.973682 0.748688 0.750244 0.972125 0.750244 1.24869V12.7487C0.750244 13.0253 0.973682 13.2487 1.25024 13.2487H12.7502C13.0268 13.2487 13.2502 13.0253 13.2502 12.7487V7.12369C13.2502 7.05494 13.194 6.99869 13.1252 6.99869Z"
+                    fill="black" fill-opacity="0.85" />
+                  <path
+                    d="M4.56108 7.3565L4.53139 9.21431C4.52983 9.35337 4.64233 9.46744 4.78139 9.46744H4.78764L6.63139 9.42212C6.66264 9.42056 6.69389 9.40806 6.71577 9.38619L13.2142 2.90181C13.2626 2.85338 13.2626 2.77369 13.2142 2.72525L11.272 0.784625C11.247 0.759625 11.2158 0.748688 11.183 0.748688C11.1501 0.748688 11.1189 0.761188 11.0939 0.784625L4.59702 7.269C4.57445 7.2926 4.56161 7.32385 4.56108 7.3565ZM5.55327 7.72525L11.183 2.10806L11.8892 2.81275L6.25639 8.43306L5.54233 8.45025L5.55327 7.72525Z"
+                    fill="black" fill-opacity="0.85" />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_180347_6110">
+                  <rect width="14" height="14" fill="white" />
+                </clipPath>
+                <clipPath id="clip1_180347_6110">
+                  <rect width="14" height="14" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="sider-item__title-text">Form</span>
+            <svg class="sider-item__title-arrow" width="10" height="10" viewBox="0 0 10 10" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.41427 3.05545C2.02374 2.66492 1.46972 2.58578 1.17683 2.87867C0.883935 3.17157 0.963081 3.72558 1.35361 4.11611L4.18203 6.94454C4.42536 7.18786 4.73216 7.3103 4.99971 7.29719C5.26737 7.31045 5.57436 7.18801 5.81782 6.94456L8.64624 4.11613C9.03677 3.7256 9.11591 3.17158 8.82302 2.87869C8.53013 2.5858 7.97611 2.66494 7.58558 3.05547L4.99993 5.64112L2.41427 3.05545Z"
+                fill="black" fill-opacity="0.85" />
+            </svg>
+          </div>
+        </div>
+        <div class="sider-item">
+          <div class="sider-item__title">
+            <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_180347_6110)">
+                <rect width="14" height="14" fill="white" fill-opacity="0.01" />
+                <g clip-path="url(#clip1_180347_6110)">
+                  <path
+                    d="M13.1252 6.99869H12.2502C12.1815 6.99869 12.1252 7.05494 12.1252 7.12369V12.1237H1.87524V1.87369H6.87524C6.94399 1.87369 7.00024 1.81744 7.00024 1.74869V0.873688C7.00024 0.804938 6.94399 0.748688 6.87524 0.748688H1.25024C0.973682 0.748688 0.750244 0.972125 0.750244 1.24869V12.7487C0.750244 13.0253 0.973682 13.2487 1.25024 13.2487H12.7502C13.0268 13.2487 13.2502 13.0253 13.2502 12.7487V7.12369C13.2502 7.05494 13.194 6.99869 13.1252 6.99869Z"
+                    fill="black" fill-opacity="0.85" />
+                  <path
+                    d="M4.56108 7.3565L4.53139 9.21431C4.52983 9.35337 4.64233 9.46744 4.78139 9.46744H4.78764L6.63139 9.42212C6.66264 9.42056 6.69389 9.40806 6.71577 9.38619L13.2142 2.90181C13.2626 2.85338 13.2626 2.77369 13.2142 2.72525L11.272 0.784625C11.247 0.759625 11.2158 0.748688 11.183 0.748688C11.1501 0.748688 11.1189 0.761188 11.0939 0.784625L4.59702 7.269C4.57445 7.2926 4.56161 7.32385 4.56108 7.3565ZM5.55327 7.72525L11.183 2.10806L11.8892 2.81275L6.25639 8.43306L5.54233 8.45025L5.55327 7.72525Z"
+                    fill="black" fill-opacity="0.85" />
+                </g>
+              </g>
+              <defs>
+                <clipPath id="clip0_180347_6110">
+                  <rect width="14" height="14" fill="white" />
+                </clipPath>
+                <clipPath id="clip1_180347_6110">
+                  <rect width="14" height="14" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+            <span class="sider-item__title-text">Form</span>
+            <svg class="sider-item__title-arrow" width="10" height="10" viewBox="0 0 10 10" fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M2.41427 3.05545C2.02374 2.66492 1.46972 2.58578 1.17683 2.87867C0.883935 3.17157 0.963081 3.72558 1.35361 4.11611L4.18203 6.94454C4.42536 7.18786 4.73216 7.3103 4.99971 7.29719C5.26737 7.31045 5.57436 7.18801 5.81782 6.94456L8.64624 4.11613C9.03677 3.7256 9.11591 3.17158 8.82302 2.87869C8.53013 2.5858 7.97611 2.66494 7.58558 3.05547L4.99993 5.64112L2.41427 3.05545Z"
+                fill="black" fill-opacity="0.85" />
+            </svg>
+          </div>
+        </div>
+
+
+      </div>
+      <div class="sider-fold">
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="16" height="16" fill="white" />
+          <path
+            d="M6.14314 6.75056H14.7146C14.7931 6.75056 14.8574 6.68627 14.8574 6.6077V5.6077C14.8574 5.52913 14.7931 5.46484 14.7146 5.46484H6.14314C6.06457 5.46484 6.00028 5.52913 6.00028 5.6077V6.6077C6.00028 6.68627 6.06457 6.75056 6.14314 6.75056ZM6.00028 10.3934C6.00028 10.472 6.06457 10.5363 6.14314 10.5363H14.7146C14.7931 10.5363 14.8574 10.472 14.8574 10.3934V9.39342C14.8574 9.31484 14.7931 9.25056 14.7146 9.25056H6.14314C6.06457 9.25056 6.00028 9.31484 6.00028 9.39342V10.3934ZM15.0003 1.71484H1.00028C0.921708 1.71484 0.857422 1.77913 0.857422 1.8577V2.8577C0.857422 2.93627 0.921708 3.00056 1.00028 3.00056H15.0003C15.0789 3.00056 15.1431 2.93627 15.1431 2.8577V1.8577C15.1431 1.77913 15.0789 1.71484 15.0003 1.71484ZM15.0003 13.0006H1.00028C0.921708 13.0006 0.857422 13.0648 0.857422 13.1434V14.1434C0.857422 14.222 0.921708 14.2863 1.00028 14.2863H15.0003C15.0789 14.2863 15.1431 14.222 15.1431 14.1434V13.1434C15.1431 13.0648 15.0789 13.0006 15.0003 13.0006ZM0.918136 8.12377L3.70921 10.322C3.81278 10.4041 3.96635 10.3309 3.96635 10.1988V5.80234C3.96635 5.6702 3.81457 5.59699 3.70921 5.67913L0.918136 7.87734C0.899369 7.89194 0.884182 7.91062 0.873736 7.93197C0.863289 7.95333 0.857859 7.97679 0.857859 8.00056C0.857859 8.02433 0.863289 8.04779 0.873736 8.06914C0.884182 8.0905 0.899369 8.10918 0.918136 8.12377Z"
+            fill="black" />
+        </svg>
+      </div>
+    </div>
+
+    <div class="workplace-section">
+      <div class="workplace-header">
+        <div class="workplace-path">
+          <span class="workplace-path-section">first-level Menu</span>
+          <span class="seprate">/</span>
+          <span class="workplace-path-section">Second-level Menu</span>
+          <span class="seprate">/</span>
+          <span class="workplace-path-section">Current Page</span>
+        </div>
+        <div class="workplace-title">Workplace</div>
+        <div class="workplace-account">
+          <img src="./img/avatar-big.png" alt="" class="workplace-account-avatar">
+          <div class="workplace-account-greet">
+            <div class="workplace-account-greet__main">Good morning, Serati Ma, have a great day!</div>
+            <div class="workplace-account-greet__sub">User interaction expert | ant financial service - business group -
+              platform department - technology department -UED</div>
+          </div>
+          <div class="workplace-account-notices">
+            <div class="workplace-account-notice">
+              <div class="workplace-account-notice__name">Projects</div>
+              <div class="workplace-account-notice__number">56</div>
+            </div>
+            <span class="seprate"></span>
+            <div class="workplace-account-notice">
+              <div class="workplace-account-notice__name">Team Ranking</div>
+              <div class="workplace-account-notice__number">
+                8
+                <span class="workplace-account-notice__number-small">/24</span>
+              </div>
+            </div>
+            <span class="seprate"></span>
+            <div class="workplace-account-notice">
+              <div class="workplace-account-notice__name">Projects Visits</div>
+              <div class="workplace-account-notice__number">2,233</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="workplace-body">
+        <div class="workplace-main-container">
+          <div class="workplace-main-project">
+            <div class="workplace-project-title">
+              <div class="workplace-project-title__text module-title">Ongoing Projects</div>
+              <a href="javascript:;" class="workplace-project-more">All Projects</a>
+            </div>
+            <div class="workplace-project-list">
+              <div class="workplace-project-item">
+                <div class="workplace-project-item__name">
+                  <img src="./img/icon-zhifubao.png" alt="" class="workplace-project-item__name-logo">
+                  <span class="workplace-project-item__name-text">Alipay</span>
+                </div>
+                <div class="workplace-project-item__desc">Lorem aliquet est risus pretium, cursus.</div>
+                <div class="workplace-project-item__info">
+                  <div class="workplace-project-item__info-text">Ultrices at viverra</div>
+                  <div class="workplace-project-item__info-time">7 days ago</div>
+                </div>
+              </div>
+              <div class="workplace-project-item">
+                <div class="workplace-project-item__name">
+                  <img src="./img/icon-zhifubao.png" alt="" class="workplace-project-item__name-logo">
+                  <span class="workplace-project-item__name-text">Alipay</span>
+                </div>
+                <div class="workplace-project-item__desc">Lorem aliquet est risus pretium, cursus.</div>
+                <div class="workplace-project-item__info">
+                  <div class="workplace-project-item__info-text">Ultrices at viverra</div>
+                  <div class="workplace-project-item__info-time">7 days ago</div>
+                </div>
+              </div>
+              <div class="workplace-project-item">
+                <div class="workplace-project-item__name">
+                  <img src="./img/icon-zhifubao.png" alt="" class="workplace-project-item__name-logo">
+                  <span class="workplace-project-item__name-text">Alipay</span>
+                </div>
+                <div class="workplace-project-item__desc">Lorem aliquet est risus pretium, cursus.</div>
+                <div class="workplace-project-item__info">
+                  <div class="workplace-project-item__info-text">Ultrices at viverra</div>
+                  <div class="workplace-project-item__info-time">7 days ago</div>
+                </div>
+              </div>
+              <div class="workplace-project-item">
+                <div class="workplace-project-item__name">
+                  <img src="./img/icon-zhifubao.png" alt="" class="workplace-project-item__name-logo">
+                  <span class="workplace-project-item__name-text">Alipay</span>
+                </div>
+                <div class="workplace-project-item__desc">Lorem aliquet est risus pretium, cursus.</div>
+                <div class="workplace-project-item__info">
+                  <div class="workplace-project-item__info-text">Ultrices at viverra</div>
+                  <div class="workplace-project-item__info-time">7 days ago</div>
+                </div>
+              </div>
+              <div class="workplace-project-item">
+                <div class="workplace-project-item__name">
+                  <img src="./img/icon-zhifubao.png" alt="" class="workplace-project-item__name-logo">
+                  <span class="workplace-project-item__name-text">Alipay</span>
+                </div>
+                <div class="workplace-project-item__desc">Lorem aliquet est risus pretium, cursus.</div>
+                <div class="workplace-project-item__info">
+                  <div class="workplace-project-item__info-text">Ultrices at viverra</div>
+                  <div class="workplace-project-item__info-time">7 days ago</div>
+                </div>
+              </div>
+              <div class="workplace-project-item">
+                <div class="workplace-project-item__name">
+                  <img src="./img/icon-zhifubao.png" alt="" class="workplace-project-item__name-logo">
+                  <span class="workplace-project-item__name-text">Alipay</span>
+                </div>
+                <div class="workplace-project-item__desc">Lorem aliquet est risus pretium, cursus.</div>
+                <div class="workplace-project-item__info">
+                  <div class="workplace-project-item__info-text">Ultrices at viverra</div>
+                  <div class="workplace-project-item__info-time">7 days ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="workplace-main-activities">
+            <div class="workplace-activities-title module-title">Activities</div>
+            <div class="workplace-activities-list">
+              <div class="workplace-activities-item">
+                <img src="./img/avatar1-32.png" alt="" class="workplace-activities-item__avatar">
+                <div class="workplace-activities-item__content">
+                  <div class="workplace-activities-item__content-text">
+                    Ridiculus tempus <span class="key">vitae
+                      lectus</span> blandit vulputate
+                    <span class="key">dolor integer </span> natoque augue.
+                  </div>
+                  <div class="workplace-activities-item__content-time">7 days ago</div>
+                </div>
+              </div>
+              <div class="workplace-activities-item">
+                <img src="./img/avatar1-32.png" alt="" class="workplace-activities-item__avatar">
+                <div class="workplace-activities-item__content">
+                  <div class="workplace-activities-item__content-text">
+                    Ridiculus tempus <span class="key">vitae
+                      lectus</span> blandit vulputate
+                    <span class="key">dolor integer </span> natoque augue.
+                  </div>
+                  <div class="workplace-activities-item__content-time">7 days ago</div>
+                </div>
+              </div>
+              <div class="workplace-activities-item">
+                <img src="./img/avatar1-32.png" alt="" class="workplace-activities-item__avatar">
+                <div class="workplace-activities-item__content">
+                  <div class="workplace-activities-item__content-text">
+                    Ridiculus tempus <span class="key">vitae
+                      lectus</span> blandit vulputate
+                    <span class="key">dolor integer </span> natoque augue.
+                  </div>
+                  <div class="workplace-activities-item__content-time">7 days ago</div>
+                </div>
+              </div>
+              <div class="workplace-activities-item">
+                <img src="./img/avatar1-32.png" alt="" class="workplace-activities-item__avatar">
+                <div class="workplace-activities-item__content">
+                  <div class="workplace-activities-item__content-text">
+                    Ridiculus tempus <span class="key">vitae
+                      lectus</span> blandit vulputate
+                    <span class="key">dolor integer </span> natoque augue.
+                  </div>
+                  <div class="workplace-activities-item__content-time">7 days ago</div>
+                </div>
+              </div>
+              <div class="workplace-activities-item">
+                <img src="./img/avatar1-32.png" alt="" class="workplace-activities-item__avatar">
+                <div class="workplace-activities-item__content">
+                  <div class="workplace-activities-item__content-text">
+                    Ridiculus tempus <span class="key">vitae
+                      lectus</span> blandit vulputate
+                    <span class="key">dolor integer </span> natoque augue.
+                  </div>
+                  <div class="workplace-activities-item__content-time">7 days ago</div>
+                </div>
+              </div>
+              <div class="workplace-activities-item">
+                <img src="./img/avatar1-32.png" alt="" class="workplace-activities-item__avatar">
+                <div class="workplace-activities-item__content">
+                  <div class="workplace-activities-item__content-text">
+                    Ridiculus tempus <span class="key">vitae
+                      lectus</span> blandit vulputate
+                    <span class="key">dolor integer </span> natoque augue.
+                  </div>
+                  <div class="workplace-activities-item__content-time">7 days ago</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="workplace-sider-container">
+          <div class="workplace-sider-quick">
+            <div class="workplace-quick-title module-title">Quick start</div>
+            <div class="workplace-quick-links">
+              <div class="workplace-quick-link">Action One</div>
+              <div class="workplace-quick-link">Action Two</div>
+              <div class="workplace-quick-link">Action Three</div>
+              <div class="workplace-quick-link">Action Four</div>
+              <div class="workplace-quick-link">Action Five</div>
+              <div class="workplace-quick-link">Action Six</div>
+              <div class="workplace-quick-more">
+                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.46863 1.3772H6.53113C6.44779 1.3772 6.40613 1.41886 6.40613 1.5022V6.40845H1.75024C1.66691 6.40845 1.62524 6.45011 1.62524 6.53345V7.47095C1.62524 7.55428 1.66691 7.59595 1.75024 7.59595H6.40613V12.5022C6.40613 12.5855 6.44779 12.6272 6.53113 12.6272H7.46863C7.55196 12.6272 7.59363 12.5855 7.59363 12.5022V7.59595H12.2502C12.3336 7.59595 12.3752 7.55428 12.3752 7.47095V6.53345C12.3752 6.45011 12.3336 6.40845 12.2502 6.40845H7.59363V1.5022C7.59363 1.41886 7.55196 1.3772 7.46863 1.3772Z"
+                    fill="#1890FF" />
+                </svg>
+                Add
+              </div>
+            </div>
+          </div>
+          <div class="workplace-sider-team"></div>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
