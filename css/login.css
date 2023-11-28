@@ -1,16 +1,16 @@
 body {
-  background-color: #f0f2f5;
-  display: flex;
   flex-direction: column;
-  height: 100vh;
   justify-content: flex-end;
+  display: flex;
+  height: 100vh;
+  background-color: #f0f2f5;
 }
 
 .page-header {
-  margin: 127px auto 0;
   flex-direction: column;
   align-items: center;
   display: flex;
+  margin: 127px auto 0;
 }
 
 .page-body {
@@ -19,13 +19,12 @@ body {
 }
 
 .header-logo {
-  display: flex;
   align-items: center;
+  display: flex;
   margin-bottom: 12px;
 }
 
 .header-logo__text {
-
   font-size: 33px;
   font-weight: 800;
   line-height: 38px;
@@ -43,11 +42,11 @@ body {
 }
 
 .login-hd {
+  gap: 32px;
   display: flex;
   height: 36px;
-  gap: 32px;
-  border-bottom: 1px solid #0000000F;
   margin-bottom: 22px;
+  border-bottom: 1px solid #0000000F;
 }
 
 .login-hd__title {
@@ -77,13 +76,13 @@ body {
 
 .login-bd__username,
 .login-bd__password {
-  display: flex;
   align-items: center;
+  display: flex;
   height: 40px;
   padding: 8px 12px;
+  box-sizing: border-box;
   background-color: #fff;
   border: 1px solid #d9d9d9;
-  box-sizing: border-box;
 }
 
 .login-bd__username>svg,
@@ -105,10 +104,9 @@ body {
   color: #00000040;
 }
 
-
 .login-bd__verification {
-  display: flex;
   justify-content: space-between;
+  display: flex;
 }
 
 .login-bd__get {
@@ -121,10 +119,9 @@ body {
 }
 
 .login-bd__option {
-  margin-top: 22px;
-  display: flex;
   justify-content: space-between;
-
+  display: flex;
+  margin-top: 22px;
 }
 
 .login-bd__option-remember {
@@ -136,7 +133,6 @@ body {
   font-size: 16px;
   line-height: 24px;
   color: #1890FF;
-
 }
 
 .login-ft {
@@ -150,14 +146,14 @@ body {
   line-height: 24px;
   color: #fff;
   text-align: center;
-  border-radius: 2px;
   background-color: #1890FF;
+  border-radius: 2px;
   cursor: pointer;
 }
 
 .quick-section {
-  display: flex;
   align-items: center;
+  display: flex;
   width: 360px;
 }
 
@@ -186,18 +182,18 @@ body {
 .page-footer {
   flex: 1;
   flex-direction: column;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
   display: flex;
   margin-bottom: 27px;
   color: #00000073;
 }
 
 .footer-links {
-  display: flex;
-  line-height: 22px;
   align-items: center;
+  display: flex;
   margin-bottom: 10px;
+  line-height: 22px;
 }
 
 .footer-link.github {
@@ -207,5 +203,4 @@ body {
 .footer-copy {
   font-size: 14px;
   line-height: 22px;
-
 }

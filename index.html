@@ -27,10 +27,17 @@
     .hover-content-item.active {
       background-color: #fff1cd;
     }
+
+    .box {
+      display: inline-flex;
+      background-color: red;
+      font-size: 20px;
+    }
   </style>
 </head>
 
 <body>
+
   <div class="demo-wrapper">
     <div class="checkout-section">
       <div class="click-tab" id="click-tab">
@@ -38,11 +45,11 @@
         <div class="click-tab-item" data-index="1">click tab B</div>
         <div class="click-tab-item" data-index="2">click tab C</div>
       </div>
-      <!-- <div class="click-content" id="click-content">
+      <div class="click-content" id="click-content">
         <div class="click-content-item active">click content A</div>
         <div class="click-content-item">click content B</div>
-        <div class="click-content-item">click content C</div>
-      </div> -->
+      </div>
+      <div class="click-content-item">click content C</div>
     </div>
   </div>
 
@@ -60,18 +67,20 @@
   </div>
   </div>
 
+  <div class="box">&nbsp;你好</div>
+
   <script>
     // 为click-tab绑定事件
     document.getElementById('click-tab').addEventListener('click', function (e) {
       if (event.target.className.indexOf('click-tab-item') >= 0) {
         // 被点击目标的标记数字
         let index = e.target.dataset.index;
-        console.log(e.target);  
+        console.log(e.target);
         // 为所有的题目和内容绑定上click-tab/content-item属性，为点击目标设定active属性
         document.querySelectorAll('.click-tab-item').forEach(e => e.setAttribute('class', 'click-tab-item'));
-        // document.querySelectorAll('.click-content-item').forEach(e => e.setAttribute('class', 'click-content-item'));
+        document.querySelectorAll('.click-content-item').forEach(e => e.setAttribute('class', 'click-content-item'));
         document.querySelectorAll('.click-tab-item')[index].setAttribute('class', 'click-tab-item active');
-        // document.querySelectorAll('.click-content-item')[index].setAttribute('class', 'click-content-item active');
+        document.querySelectorAll('.click-content-item')[index].setAttribute('class', 'click-content-item active');
       }
     });
 

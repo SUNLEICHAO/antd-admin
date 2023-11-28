@@ -1,6 +1,5 @@
 body {
   font-family: Avenir;
-
 }
 
 a {
@@ -13,4 +12,8 @@ input {
   background-color: #fff;
   border: none;
   outline: none;
+}
+
+.text-1890ff{
+  color: #1890ff;
 }

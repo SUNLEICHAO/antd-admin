@@ -1,24 +1,24 @@
 .register-section {
-  width: 368px;
-  display: flex;
   flex-direction: column;
+  display: flex;
+  width: 368px;
 }
 
 .register-title {
+  margin-bottom: 22px;
   font-size: 16px;
   font-weight: bold;
   line-height: 24px;
-  margin-bottom: 22px;
 }
 
 .register-section input {
   height: 40px;
   padding: 8px 12px;
-  border-radius: 2px;
-  box-sizing: border-box;
-  border: 1px solid #D9D9D9;
-  line-height: 24px;
   margin-bottom: 16px;
+  box-sizing: border-box;
+  line-height: 24px;
+  border-radius: 2px;
+  border: 1px solid #D9D9D9;
 }
 
 .register-section input::placeholder {
@@ -34,9 +34,9 @@
 }
 
 .register-phone__prefix {
-  width: 88px;
   align-items: center;
   justify-content: center;
+  width: 88px;
   display: flex;
   background-color: #fff;
   border: 1px solid #D9D9D9;
@@ -54,8 +54,8 @@ input.register-phone__input {
 }
 
 .register-verification {
-  display: flex;
   justify-content: space-between;
+  display: flex;
 }
 
 input.register-verification__input {
@@ -66,19 +66,19 @@ input.register-verification__input {
 .register-verification__get {
   width: 109px;
   padding: 6px 15px;
-  line-height: 26px;
-  text-align: center;
   margin-left: 10px;
   box-sizing: border-box;
+  line-height: 26px;
+  text-align: center;
   background-color: #fff;
   border: 1px solid #D9D9D9;
 }
 
 .register-submit {
-  margin-top: 22px;
   align-items: center;
-  display: flex;
   justify-content: space-between;
+  display: flex;
+  margin-top: 22px;
 }
 
 .register-submit__confirm {
@@ -90,20 +90,16 @@ input.register-verification__input {
   line-height: 24px;
   color: #fff;
   text-align: center;
-  border-radius: 2px;
   background-color: #1890FF;
+  border-radius: 2px;
   cursor: pointer;
-
-
-
 }
 
 .register-submit__exit {
   width: 82px;
-  text-align: center;
-  border-radius: 2px;
   font-size: 16px;
   line-height: 24px;
   color: #1890FF;
-
+  text-align: center;
+  border-radius: 2px;
 }

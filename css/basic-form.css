@@ -1,0 +1,402 @@
+.form-section {
+  flex: 1;
+}
+
+.click-content-item {
+  display: none;
+}
+
+.click-content-item.active {
+  display: block;
+}
+
+.workplace-subtitle {
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 17px;
+  color: #333;
+}
+
+.basic-body,
+.step-body {
+  margin: 20px 24px 0;
+  background-color: #fff;
+}
+
+.basic-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.basic-form-list {
+  width: 548px;
+  margin: 28px auto 0;
+}
+
+.basic-form-item {
+  align-items: flex-start;
+  justify-content: flex-end;
+  display: flex;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 24px;
+}
+
+.basic-form-item__name {
+  white-space: nowrap;
+  display: flex;
+  margin-top: 5px;
+  margin-right: 8px;
+  line-height: 22px;
+}
+
+.basic-form-item__name svg {
+  margin: 4px;
+}
+
+.basic-form-item__name .explain {
+  color: #00000073;
+
+}
+
+
+.basic-form-item__input,
+.basic-form-item__textarea {
+  flex-shrink: 0;
+  border-radius: 2px;
+  width: 484px;
+  height: 32px;
+  padding: 5px 12px;
+  box-sizing: border-box;
+  border: 1px #d9d9d9 solid;
+}
+
+.basic-form-item__textarea {
+  height: 76px;
+  outline: none;
+}
+
+.basic-form-item__input::placeholder,
+.basic-form-item__textarea::placeholder {
+  color: #00000040;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.basic-form-item__wrapper {
+  flex-shrink: 0;
+  width: 484px;
+  display: flex;
+}
+
+.basic-form-item__input.input-78 {
+  width: 78px;
+}
+
+.basic-form-item__unit {
+  display: inline-block;
+  margin: 5px 8px;
+}
+
+.basic-form-item__checkbox {
+  display: flex;
+  align-items: center;
+  height: 32px;
+}
+
+.basic-form-item__tip {
+  color: #00000073;
+}
+
+.basic-form-btn {
+  display: flex;
+}
+
+.basic-form-btn__submit,
+.basic-form-btn__save {
+  height: 32px;
+  padding: 5px 12px;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 22px;
+  background-color: #1890ff;
+  color: #fff;
+  margin-right: 8px;
+}
+
+.basic-form-btn__save {
+  color: #000;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+}
+
+
+.step-body {
+  background-color: #fff;
+}
+
+.step-body-container {
+  margin: 0 24px;
+  padding: 24px 0;
+}
+
+.step-progress-list {
+  padding: 16px 140px;
+  height: 32px;
+}
+
+.step-progress-first .line,
+.step-progress-second .line {
+  display: inline-block;
+  width: 190px;
+  height: 1px;
+  background-color: #1890ff;
+}
+
+.step-progress-second .line {
+  background-color: #F0F0F0;
+}
+
+.step-progress-first,
+.step-progress-second,
+.step-progress-third {
+  display: inline-flex;
+  align-items: center;
+  margin-right: 16px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.step-progress-first__text {
+  margin: 0 8px;
+}
+
+.step-progress-second,
+.step-progress-third {
+  color: #00000073;
+}
+
+.step-form-list {
+  width: 446px;
+  margin: 0 auto;
+
+}
+
+.step-form-item {
+  align-items: flex-start;
+  justify-content: flex-end;
+  display: flex;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 24px;
+}
+
+.step-form-item__name {
+  white-space: nowrap;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000D9;
+  margin-right: 8px;
+  margin-top: 5px;
+
+}
+
+.step-form-item__wrapper {
+  flex-shrink: 0;
+  align-items: center;
+  display: flex;
+  width: 382px;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+}
+
+.step-form-item__input {
+  flex: 1;
+  padding: 4px 12px;
+  line-height: 22px;
+}
+
+.step-form-item__arrow {
+  margin-right: 5px;
+}
+
+.step-form-item__input::placeholder {
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000D9;
+}
+
+.step-form-item__select select {
+  outline: none;
+  border: none;
+  height: 30px;
+  padding: 1px 0px 1px 12px;
+  appearance: none;
+  cursor: pointer;
+}
+
+.step-form-item__select~.step-form-item__input {
+  border-left: 1px solid #d9d9d9;
+}
+
+.step-form-item__select+.step-form-item__arrow {
+  margin-right: 12px;
+}
+
+.step-form-item__unit {
+  margin-left: 12px;
+  color: rgba(0, 0, 0, 0.45);
+}
+
+.step-form-item__unit+.step-form-item__input {
+  padding-left: 5px;
+}
+
+.step-form-item:last-child .step-form-item__wrapper {
+  border: none;
+}
+
+.basic-form-btn__submit {
+  cursor: pointer;
+}
+
+.step-form-item:last-child {
+  margin-bottom: 40px;
+}
+
+.step-form-instruction {
+  border-top: 1px solid #d9d9d9;
+  padding-top: 24px;
+  color: #00000073;
+}
+
+.step-form-instruction__title {
+  margin-bottom: 12px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.step-form-instruction__para {
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 12px;
+}
+
+.step-form-instruction__para:last-child {
+  margin-bottom: 0;
+}
+
+.step-form-instruction__para-text {
+  display: block;
+}
+
+.step-form-instruction__para-text:first-child {
+  margin-bottom: 4px;
+}
+
+.advanced-body {
+  margin: 20px 24px 0;
+}
+
+.advanced-warehouse {
+  background-color: #fff;
+  padding-bottom: 24px;
+}
+
+.advanced-warehouse-title {
+  align-items: center;
+  justify-content: space-between;
+  height: 56px;
+  display: flex;
+  padding: 0 24px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.advanced-warehouse-title__text {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 24px;
+  color: #000000D9;
+}
+
+.advanced-warehouse-list {
+  row-gap: 8px;
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 16px;
+  padding: 24px;
+}
+
+.advanced-warehouse-item {
+  display: flex;
+  width: calc((100% - 32px) / 3);
+  flex-direction: column;
+  margin-bottom: 24px;
+}
+
+.advanced-warehouse-item__title {
+  margin-bottom: 8px;
+  line-height: 22px;
+}
+
+.advanced-warehouse-item__wrapper {
+  align-items: center;
+  display: flex;
+  height: 32px;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+}
+
+.advanced-warehouse-item__prefix,
+.advanced-warehouse-item__suffix {
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  height: 100%;
+  font-size: 14px;
+  line-height: 22px;
+  background-color: #fafafa;
+}
+
+.advanced-warehouse-item__input {
+  padding: 5px 12px;
+  width: 100%;
+  line-height: 22px;
+  box-sizing: border-box;
+}
+
+.advanced-warehouse-item__prefix+.advanced-warehouse-item__input {
+  border-left: 1px solid #d9d9d9;
+  border-right: 1px solid #d9d9d9;
+}
+
+.advanced-warehouse-item__arrow {
+  margin-right: 12px;
+  margin-top: 3px;
+}
+
+.effective-date .advanced-warehouse-item__input {
+  flex: 1;
+}
+
+.advanced-warehouse-item__to {
+  margin: 0 16px;
+}
+
+.advanced-warehouse-item__calendar {
+  margin-right: 12px;
+}
+
+.card-warehouse {
+  margin-top: 24px;
+}
+
+.advanced-warehouse-title__link {
+  color: #1890ff;
+  font-size: 14px;
+}
+
+.advanced-warehouse-item__clock {
+  margin-right: 12px;
+}

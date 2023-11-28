@@ -13,7 +13,6 @@
 .header-action {
   align-items: center;
   display: flex;
-
 }
 
 .header-action__search,
@@ -25,7 +24,6 @@
   cursor: pointer;
 }
 
-
 .header-action__notice {
   position: relative;
 }
@@ -35,25 +33,24 @@
   top: -10px;
   left: 26px;
   padding: 0 8px;
-  border-radius: 8px;
-  background-color: red;
   font-size: 12px;
   line-height: 20px;
   color: #fff;
+  background-color: red;
+  border-radius: 8px;
 }
 
 .header-action__user {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .header-action__user-avatar {
   width: 24px;
   height: 24px;
-  border-radius: 50%;
-  background-color: #1890FF;
   margin-right: 8px;
-
+  background-color: #1890FF;
+  border-radius: 50%;
 }
 
 .header-action__user-name {
@@ -66,24 +63,25 @@
 .page-body {
   height: calc(100vh - 48px);
   display: flex;
+  background-color: #f0f2f5;
 }
 
 .sider-section {
   flex-direction: column;
-  display: flex;
   justify-content: space-between;
+  display: flex;
   width: 208px;
   height: 100%;
-  /* background-color: #00000026; */
   background-color: #fff;
 }
 
 .workplace-section {
-  background-color: #f0f2f5;
+  overflow-y: auto;
+  flex: 1;
 }
 
-.workplace-section {
-  flex: 1;
+.workplace-section::-webkit-scrollbar {
+  width: 0;
 }
 
 .sider-item {
@@ -95,6 +93,7 @@
   display: flex;
   height: 40px;
   padding: 0 16px;
+  margin-bottom: 8px;
   cursor: pointer;
 }
 
@@ -112,10 +111,9 @@
   transition: all .2s ease;
 }
 
-/* .sider-item:hover .sider-item__arrow {
-  transform: rotate(180deg);
-} */
-
+.sider-item.active .sider-item__title-icon path {
+  fill: #1890FF;
+}
 
 .sider-fold svg {
   cursor: pointer;
@@ -123,33 +121,29 @@
 
 .sider-item__options {
   /* 问题，折叠动画 */
-  /* flex-direction: column;
-  display: flex; */
-  /*  */
-  display: grid;
-  overflow: hidden;
-  grid-template-rows: 0fr;
-  /* grid */
-  margin-top: 4px;
-  /* height: 0px; */
-  transition: all .3s ease;
+  /* display: grid; */
+  /* overflow: hidden; */
+  flex-direction: column;
+  display: flex;
+  height: 0px;
+  margin-top: 0;
 }
 
-.sider-item:hover .sider-item__options {
+.sider-item.active .sider-item__options {
   height: 100%;
+  margin-top: 4px;
 }
 
 .sider-item__option {
-  /* min-height: 0; */
   padding-left: 40px;
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 40px;
-  margin-bottom: 8px;
 }
 
 .sider-item__option.active {
-  background-color: #E6F7FF;
   color: #1890FF;
+  background-color: #E6F7FF;
   border-right: 3px solid #1890FF
 }
 
@@ -160,17 +154,16 @@
 }
 
 .workplace-header {
-  /* display: flex; */
   padding: 12px 24px 16px;
   background-color: lightcoral;
 }
 
 .workplace-path {
+  display: flex;
+  margin-bottom: 12px;
   font-size: 14px;
   line-height: 22px;
-  display: flex;
   color: #00000073;
-  margin-bottom: 12px;
 }
 
 .workplace-path .seprate {
@@ -184,8 +177,8 @@
 .workplace-title {
   padding: 8px 0;
   font-size: 20px;
-  line-height: 28px;
   font-weight: 500;
+  line-height: 28px;
 }
 
 .workplace-account {
@@ -199,53 +192,64 @@
 }
 
 .workplace-account-greet__main {
+  margin-bottom: 12px;
   font-size: 20px;
   font-weight: 500;
   line-height: 28px;
   color: #000;
-  margin-bottom: 12px;
 }
 
 /* 问题，行宽和原设计的不一样 */
 .workplace-account-greet__sub {
-  line-height: 22px;
   font-size: 14px;
+  line-height: 22px;
   color: #00000073;
-  font-family: Roboto;
-  letter-spacing: 0em;
 }
 
 .workplace-account-notices {
   flex: 1;
-  display: flex;
-  justify-content: flex-end;
   align-items: center;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.workplace-account-notice {
+  text-align: right;
+  background-color: lightgray;
 }
 
 .workplace-account-notice__name {
+  margin-bottom: 4px;
   font-size: 14px;
   line-height: 22px;
   color: #00000073;
 }
 
 .workplace-account-notice__number {
+  align-items: baseline;
+  display: inline-flex;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 38px;
   color: #000000D9;
+}
+
+.workplace-account-notice__number-small {
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .workplace-account-notices .seprate {
   height: 32px;
   width: 1px;
-  background-color: #0000000F;
   margin: 0 32px;
+  background-color: #0000000F;
 }
 
 .workplace-body {
-  margin: 24px;
-  display: flex;
   gap: 24px;
+  margin: 24px;
   justify-content: space-between;
+  display: flex;
 }
 
 .workplace-main-container {
@@ -277,26 +281,23 @@
   font-size: 14px;
   line-height: 22px;
   color: #1890FF;
-
 }
 
 .workplace-project-list {
-  display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  display: grid;
 }
 
 .workplace-project-item {
   padding: 24px;
   border-right: 1px solid #f0f0f0;
   border-top: 1px solid #f0f0f0;
-
 }
 
 .workplace-project-item:nth-child(3n) {
   border-right: none;
 }
-
 
 .workplace-project-item__name {
   display: flex;
@@ -313,16 +314,15 @@
 }
 
 .workplace-project-item__desc {
+  margin: 8px 0;
   font-size: 13px;
   line-height: 17px;
   color: #00000073;
-  margin: 8px 0;
-
 }
 
 .workplace-project-item__info {
-  display: flex;
   justify-content: space-between;
+  display: flex;
   font-size: 12px;
   line-height: 20px;
   color: #00000073;
@@ -332,15 +332,14 @@
   color: #00000040;
 }
 
-
 .workplace-main-activities {
   margin-top: 24px;
   background-color: #fff;
 }
 
 .workplace-activities-title,
-.workplace-quick-title {
-
+.workplace-quick-title,
+.workplace-team-title {
   padding: 16px 24px;
   border-bottom: 1px solid red;
 }
@@ -385,25 +384,62 @@
 }
 
 .workplace-quick-links {
+  flex-wrap: wrap;
+  row-gap: 8px;
   display: flex;
   padding: 24px;
-  flex-wrap: wrap;
 }
 
 .workplace-quick-link {
   font-size: 14px;
   line-height: 22px;
   padding: 0 4px;
-  /* margin-right: 2px; */
 }
 
 .workplace-quick-more {
   align-items: center;
   display: flex;
   padding: 0px 8px;
+  margin-left: 16px;
   font-size: 14px;
-  line-height: 22px;
-  border-radius: 2px;
+  line-height: 20px;
   color: #1890FF;
   border: 1px #1890FF solid;
+  border-radius: 2px;
+}
+
+.workplace-sider-team {
+  margin-top: 24px;
+  background-color: #fff;
+}
+
+.workplace-team-list {
+  padding: 24px;
+  padding-right: 17px;
+  font-size: 0;
+}
+
+.workplace-team-item {
+  font-size: 12px;
+  align-items: center;
+  display: inline-flex;
+  height: 48px;
+}
+
+.workplace-team-item__img {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+}
+
+.workplace-team-item__name {
+  line-height: 22px;
+}
+
+.workplace-team-item:nth-child(2n) {
+  width: 171px;
+}
+
+.workplace-team-item:nth-child(2n+1) {
+  width: 167px;
 }
