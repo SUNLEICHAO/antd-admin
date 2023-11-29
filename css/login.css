@@ -115,6 +115,7 @@ body {
   line-height: 26px;
   text-align: center;
   border: 1px solid #d9d9d9;
+  cursor: pointer;
 }
 
 .login-bd__option {
@@ -124,8 +125,14 @@ body {
 }
 
 .login-bd__option-remember {
+  align-items: center;
+  display: flex;
   font-size: 14px;
   line-height: 22px;
+}
+
+.login-bd__option-remember svg {
+  margin-right: 8px;
 }
 
 .login-bd__option-forgot {
@@ -170,12 +177,39 @@ body {
   width: 28px;
   height: 28px;
   margin-right: 12px;
+  cursor: pointer;
 }
 
 .quick-link {
   font-size: 16px;
   line-height: 24px;
   color: #1890FF;
+}
+
+.btn-lang {
+  position: absolute;
+  top: 8px;
+  right: 12px;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-query {
+  position: absolute;
+  bottom: 42px;
+  right: 77px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 36px;
+  height: 36px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 2px 8px 0px #00000026;
+  cursor: pointer;
 }
 
 .page-footer {

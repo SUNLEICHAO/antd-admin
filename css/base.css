@@ -1,5 +1,9 @@
 body {
   font-family: Avenir;
+  min-width: 1200px;
+  min-height: 640px;
+  overflow: hidden;
+  position: relative;
 }
 
 a {
@@ -14,6 +18,6 @@ input {
   outline: none;
 }
 
-.text-1890ff{
+.text-1890ff {
   color: #1890ff;
 }

@@ -1,5 +1,6 @@
 .form-section {
   flex: 1;
+  overflow-y: auto;
 }
 
 .click-content-item {
@@ -103,6 +104,16 @@
   height: 32px;
 }
 
+.basic-form-item__checkbox input {
+  margin-left: 16px;
+  margin-right: 8px;
+}
+
+.basic-form-item__checkbox input:first-child{
+  margin-left: 0px;
+  
+} 
+
 .basic-form-item__tip {
   color: #00000073;
 }
@@ -138,21 +149,16 @@
   margin: 0 24px;
 }
 
-.step-progress-list {
+.step-progress-list__wrapper {
   height: 32px;
-  padding: 16px 140px;
+  padding: 16px 0px;
+  display: flex;
 }
 
-.step-progress-first .line,
-.step-progress-second .line {
-  display: inline-block;
-  width: 190px;
-  height: 1px;
-  background-color: #1890ff;
-}
-
-.step-progress-second .line {
-  background-color: #F0F0F0;
+.step-progress-list {
+  /* 问题，居中的原理？ */
+  margin: 0 auto;
+  overflow: hidden;
 }
 
 .step-progress-first,
@@ -164,6 +170,21 @@
   font-size: 16px;
   line-height: 24px;
 }
+
+.step-progress-first .line,
+.step-progress-second .line {
+  flex: 1;
+  display: inline-block;
+  /* 问题，怎么将横线改为可变动的 */
+  width: 190px;
+  height: 1px;
+  background-color: #1890ff;
+}
+
+.step-progress-second .line {
+  background-color: #F0F0F0;
+}
+
 
 .step-progress-first__text {
   margin: 0 8px;
