@@ -28,13 +28,13 @@
 .workplace-search__input {
   flex: 1;
   padding: 8px 12px;
+  font-size: 16px;
+  line-height: 24px;
   border: 1px solid #d9d9d9;
   border-right: 0;
   border-radius: 2px;
   border-top-right-radius: 0;
   border-bottom-right-radius: 0;
-  line-height: 24px;
-  font-size: 16px;
 }
 
 .workplace-search__input::placeholder {
@@ -79,8 +79,8 @@
 }
 
 .sider-item__option-select {
-  display: flex;
   align-items: center;
+  display: flex;
   height: 40px;
   padding-left: 64px;
   font-size: 14px;
@@ -95,9 +95,9 @@
 }
 
 .workplace-listtitles {
+  gap: 32px;
   display: flex;
   padding-top: 8px;
-  gap: 32px;
 }
 
 .workplace-listtitle {
@@ -124,18 +124,18 @@
 }
 
 .article-selectors {
-  background-color: #fff;
   padding: 24px;
+  background-color: #fff;
   border-bottom: 1px solid #d9d9d9;
 }
 
 .article-selector {
-  display: flex;
   justify-content: space-between;
+  display: flex;
+  margin-bottom: 8px;
   color: #000000D9;
   font-size: 14px;
   line-height: 22px;
-  margin-bottom: 8px;
 }
 
 .article-selector:last-child {
@@ -143,9 +143,9 @@
 }
 
 .article-selector-wrapper {
+  align-items: center;
   display: flex;
   height: 32px;
-  align-items: center;
 }
 
 .article-selector__options {
@@ -153,8 +153,8 @@
 }
 
 .article-selector__option {
-  padding: 0 8px;
   align-items: center;
+  padding: 0 8px;
 }
 
 .article-selector__option-icon {
@@ -171,14 +171,14 @@
 }
 
 .article-selector-expend {
-  cursor: pointer;
   color: #1890ff;
+  cursor: pointer;
 }
 
 .owner .article-selector__option {
+  margin-right: 4px;
   background-color: #d9d9d9;
   border-radius: 2px;
-  margin-right: 4px;
 }
 
 .article-selector.owner {
@@ -186,16 +186,15 @@
 }
 
 .article-selector__myown {
+  align-items: center;
+  display: flex;
   margin-left: 24px;
   color: #1890ff;
-  display: flex;
-  align-items: center;
 }
 
 .article-selector__option {
   display: flex;
 }
-
 
 .article-selector__option-wrapper {
   align-items: center;
@@ -204,8 +203,8 @@
   padding: 4px 12px;
   margin-left: 8px;
   box-sizing: border-box;
-  border-radius: 2px;
   border: 1px solid #d9d9d9;
+  border-radius: 2px;
 }
 
 .article-selector__option-input {
@@ -240,17 +239,17 @@
 }
 
 .article-item__categories {
+  gap: 8px;
   display: flex;
   margin: 12px 0 16px;
-  gap: 8px;
 }
 
 .article-item__category {
   background-color: #fafafa;
-  border: 1px solid #d9d9d9;
   padding: 0 10px;
   font-size: 12px;
   line-height: 20px;
+  border: 1px solid #d9d9d9;
 }
 
 .article-item__category-icon {
@@ -265,10 +264,10 @@
 
 .article-item__updated {
   display: flex;
+  margin: 16px 0;
   font-size: 14px;
   line-height: 22px;
   color: #00000073;
-  margin: 16px 0;
 }
 
 .article-item__updated-avatar {
@@ -278,8 +277,8 @@
 }
 
 .article-item__updated-time {
-  color: #00000040;
   margin-left: 16px;
+  color: #00000040;
 }
 
 .article-item__info {
@@ -289,8 +288,8 @@
 }
 
 .article-item__info-inter {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .article-item__info .seprate {
@@ -301,10 +300,9 @@
 }
 
 .article-item__info-inter-number {
-  color: #00000073;
   margin-left: 8px;
   line-height: 22px;
-
+  color: #00000073;
 }
 
 .article-more {
@@ -339,10 +337,10 @@
 }
 
 .project-list {
-  margin-top: 24px;
-  display: flex;
   flex-wrap: wrap;
   gap: 16px;
+  display: flex;
+  margin-top: 24px;
 }
 
 .project-item {
@@ -362,9 +360,9 @@
 }
 
 .project-item__desc {
+  margin: 8px 0;
   font-size: 14px;
   line-height: 22px;
-  margin: 8px 0;
 }
 
 .project-item__content {
@@ -386,16 +384,14 @@
 
 .project-item__info-avatars {
   display: flex;
-  /* width: 80px; */
 }
 
 .project-item__info-avatar {
+  flex-shrink: 1;
+  width: 32px;
+  margin-right: -8px;
   border: 1px solid #fff;
   border-radius: 50%;
-
-  width: 32px;
-  flex-shrink: 1;
-  margin-right: -8px;
 }
 
 .project-item__info-avatar:last-child {
@@ -407,10 +403,10 @@
 }
 
 .application-list {
-  margin-top: 24px;
-  display: flex;
-  flex-wrap: wrap;
   gap: 24px;
+  flex-wrap: wrap;
+  display: flex;
+  margin-top: 24px;
 }
 
 .application-item {
@@ -419,9 +415,9 @@
 }
 
 .application-item__top {
-  padding: 24px 24px 20px;
-  display: flex;
   align-items: flex-start;
+  display: flex;
+  padding: 24px 24px 20px;
   border-bottom: 1px solid #f0f0f0;
 }
 
@@ -430,11 +426,11 @@
 }
 
 .application-item__title {
+  margin-bottom: 16px;
   font-size: 14px;
   font-weight: bold;
   line-height: 22px;
   color: #000;
-  margin-bottom: 16px;
 }
 
 .application-item__indicators {
@@ -470,8 +466,8 @@
 }
 
 .application-item__bottom .seprate {
+  display: inline-block;
   width: 1px;
   height: 16px;
   background-color: #f0f0f0;
-  display: inline-block;
 }
