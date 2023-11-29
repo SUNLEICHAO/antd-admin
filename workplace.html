@@ -130,8 +130,7 @@
             <a href="javascript:;" class="sider-item__option">Workplace</a>
           </div>
         </div>
-
-        <div class="sider-item ">
+        <div class="sider-item " onclick="location.href='./form.html'">
           <div class="sider-item__title">
             <svg class="sider-item__title-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -169,8 +168,7 @@
             <a href="javascript:;" class="sider-item__option active">Advanced Form</a>
           </div>
         </div>
-
-        <div class="sider-item">
+        <div class="sider-item " onclick="location.href='./search-list.html'">
           <div class="sider-item__title">
             <svg class="sider-item__title-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -186,6 +184,33 @@
                 d="M2.41427 3.05545C2.02374 2.66492 1.46972 2.58578 1.17683 2.87867C0.883935 3.17157 0.963081 3.72558 1.35361 4.11611L4.18203 6.94454C4.42536 7.18786 4.73216 7.3103 4.99971 7.29719C5.26737 7.31045 5.57436 7.18801 5.81782 6.94456L8.64624 4.11613C9.03677 3.7256 9.11591 3.17158 8.82302 2.87869C8.53013 2.5858 7.97611 2.66494 7.58558 3.05547L4.99993 5.64112L2.41427 3.05545Z"
                 fill="black" fill-opacity="0.85" />
             </svg>
+          </div>
+
+          <div class="sider-item__options">
+            <a href="javascript:;" class="sider-item__option level-2">
+              Search List
+              <svg class="sider-item__option-arrow" width="11" height="10" viewBox="0 0 11 10" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M2.91439 3.05545C2.52386 2.66492 1.96984 2.58578 1.67695 2.87867C1.38406 3.17157 1.4632 3.72558 1.85373 4.11611L4.68215 6.94454C4.92548 7.18786 5.23228 7.3103 5.49984 7.29719C5.76749 7.31045 6.07449 7.18801 6.31794 6.94456L9.14636 4.11613C9.53689 3.7256 9.61603 3.17158 9.32314 2.87869C9.03025 2.5858 8.47623 2.66494 8.0857 3.05547L5.50006 5.64112L2.91439 3.05545Z"
+                  fill="black" fill-opacity="0.85" />
+              </svg>
+            </a>
+            <div class="sider-item__option-selects" id="click-tab">
+              <a class="sider-item__option-select click-tab-item active" href="javascript:;" data-index="0">
+                Search List(articles)
+              </a>
+              <a class="sider-item__option-select click-tab-item" href="javascript:;" data-index="1">
+                Search List(projects)
+              </a>
+              <a class="sider-item__option-select click-tab-item" href="javascript:;" data-index="2">
+                Search List(applica...
+              </a>
+            </div>
+            <a href="javascript:;" class="sider-item__option active"
+              onclick="location.href='./search-table.html'">Search Table</a>
+            <a href="javascript:;" class="sider-item__option ">Basic List</a>
+            <a href="javascript:;" class="sider-item__option ">Card List</a>
           </div>
         </div>
         <div class="sider-item">
@@ -536,11 +561,6 @@
     </div>
 
   </div>
-  <script>
-    // 点击别的“form“，取消当前所有的active类，为新的对象绑定active类
-    // let tar = document.getElementsByClassName('click-content-item')
-    // tar[0].style.display = "none"
-  </script>
 </body>
 
 </html>

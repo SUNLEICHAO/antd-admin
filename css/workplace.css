@@ -69,10 +69,12 @@
 .sider-section {
   flex-direction: column;
   justify-content: space-between;
+  z-index: 10;
   display: flex;
   width: 208px;
   height: 100%;
   background-color: #fff;
+  box-shadow: 0px 2px 8px 0px #00000026;
 }
 
 .workplace-section {
@@ -147,6 +149,53 @@
   border-right: 3px solid #1890FF
 }
 
+.sider-item__option.level-2 {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  background-color: transparent;
+  border: none;
+  color: #000;
+}
+
+.sider-item__option.level-2.active {
+  color: #1890FF;
+}
+
+.sider-item__option-arrow {
+  margin-right: 15px;
+}
+
+.sider-item__option.level-2.active .sider-item__option-arrow {
+  transform: rotate(180deg);
+}
+
+.sider-item__option-selects {
+  flex-direction: column;
+  row-gap: 8px;
+  display: none;
+}
+
+.active+.sider-item__option-selects {
+  display: flex;
+}
+
+.sider-item__option-select {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  padding-left: 64px;
+  font-size: 14px;
+  line-height: 22px;
+  white-space: nowrap;
+}
+
+.sider-item__option-select.active {
+  color: #1890FF;
+  background-color: #E6F7FF;
+  border-right: 3px solid #1890FF;
+}
+
 .sider-fold {
   padding: 0 16px;
   line-height: 40px;
@@ -155,7 +204,7 @@
 
 .workplace-header {
   padding: 12px 24px 16px;
-  background-color: lightcoral;
+  background-color: #fff;
 }
 
 .workplace-path {
@@ -215,7 +264,6 @@
 
 .workplace-account-notice {
   text-align: right;
-  background-color: lightgray;
 }
 
 .workplace-account-notice__name {

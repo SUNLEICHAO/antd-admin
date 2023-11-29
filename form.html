@@ -93,7 +93,7 @@
   <div class="page-body">
     <div class="sider-section">
       <div class="sider-list">
-        <div class="sider-item ">
+        <div class="sider-item "  onclick="location.href='./workplace.html'">
           <div class="sider-item__title">
             <svg class="sider-item__title-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -165,13 +165,12 @@
             </svg>
           </div>
           <div class="sider-item__options" id="click-tab">
-            <a href="javascript:;" class="sider-item__option ">Basic Form</a>
-            <a href="javascript:;" class="sider-item__option active">Step Form</a>
-            <a href="javascript:;" class="sider-item__option ">Advanced Form</a>
+            <a href="javascript:;" class="sider-item__option click-tab-item active" data-index="0">Basic Form</a>
+            <a href="javascript:;" class="sider-item__option click-tab-item " data-index="1">Step Form</a>
+            <a href="javascript:;" class="sider-item__option click-tab-item" data-index="2">Advanced Form</a>
           </div>
         </div>
-
-        <div class="sider-item">
+        <div class="sider-item"  onclick="location.href='./search-list.html'">
           <div class="sider-item__title">
             <svg class="sider-item__title-icon" width="14" height="14" viewBox="0 0 14 14" fill="none"
               xmlns="http://www.w3.org/2000/svg">
@@ -296,7 +295,7 @@
 
     <div class="form-section">
 
-      <div class="click-content-item ">
+      <div class="click-content-item active">
         <div class="basic-form">
 
           <div class="workplace-header">
@@ -572,8 +571,7 @@
         </div>
       </div>
 
-      <div class="click-content-item active">
-
+      <div class="click-content-item ">
         <div class="advanced-form">
           <div class="workplace-header">
             <div class="workplace-path">
@@ -741,23 +739,22 @@
 
       </div>
     </div>
+  </div>
 
-
-    <script>
-      // 获取元素的所有子元素
-      document.getElementById('click-tab').addEventListener('click', function (e) {
-        if (event.target.className.indexOf('click-tab-item') >= 0) {
-          // 被点击目标的标记数字
-          let index = e.target.dataset.index;
-          console.log(e.target);
-          // 为所有的题目和内容绑定上click-tab/content-item属性，为点击目标设定active属性
-          document.querySelectorAll('.click-tab-item').forEach(e => e.setAttribute('class', 'click-tab-item'));
-          document.querySelectorAll('.click-content-item').forEach(e => e.setAttribute('class', 'click-content-item'));
-          document.querySelectorAll('.click-tab-item')[index].setAttribute('class', 'click-tab-item active');
-          document.querySelectorAll('.click-content-item')[index].setAttribute('class', 'click-content-item active');
-        }
-      });
-    </script>
+  <script>
+    // 获取元素的所有子元素
+    document.getElementById('click-tab').addEventListener('click', function (e) {
+      if (event.target.className.indexOf('click-tab-item') >= 0) {
+        // 被点击目标的标记数字
+        let index = e.target.dataset.index;
+        // 为所有的题目和内容绑定上click-tab/content-item属性，为点击目标设定active属性
+        document.querySelectorAll('.click-tab-item').forEach(e => e.setAttribute('class', 'sider-item__option click-tab-item'));
+        document.querySelectorAll('.click-content-item').forEach(e => e.setAttribute('class', 'click-content-item'));
+        document.querySelectorAll('.click-tab-item')[index].setAttribute('class', 'sider-item__option click-tab-item active');
+        document.querySelectorAll('.click-content-item')[index].setAttribute('class', 'click-content-item active');
+      }
+    });
+  </script>
 </body>
 
 </html>

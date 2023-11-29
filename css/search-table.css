@@ -1,0 +1,277 @@
+.table-section {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.table-section::-webkit-scrollbar {
+  width: 0;
+}
+
+.table-selectors {
+  margin: 24px;
+  background-color: #fff;
+}
+
+.table-selectors {
+  display: flex;
+  padding: 24px;
+}
+
+.table-selector {
+  align-items: center;
+  display: flex;
+  font-size: 14px;
+  line-height: 22px;
+  color: #000000D9;
+}
+
+.table-selector:first-child {
+  flex: 1;
+}
+
+.table-selector__icon {
+  margin: 0 4px;
+}
+
+.table-selector__input {
+  width: 400px;
+  height: 32px;
+  padding: 5px 12px;
+  margin-left: 8px;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+}
+
+.desc .table-selector__input {
+  width: 300px;
+}
+
+.table-selector__input::placeholder {
+  font-size: 14px;
+  line-height: 22px;
+  color: #00000040;
+}
+
+.table-reset {
+  padding: 4px 15px;
+  margin: 0 8px;
+  border: 1px solid #d9d9d9;
+  font-size: 14px;
+  line-height: 22px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.table-query {
+  padding: 5px 15px;
+  line-height: 22px;
+  color: #fff;
+  background-color: #1890ff;
+  cursor: pointer;
+}
+
+.table-expend {
+  align-items: center;
+  display: flex;
+  margin-left: 16px;
+  color: #1890ff;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.tab-topbar {
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  height: 64px;
+  padding: 0 24px;
+  margin: 24px;
+  margin-bottom: 0;
+  background-color: #fff;
+}
+
+.tab-topbar-left {
+  margin-left: 8px;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: bold;
+  color: #000000D9;
+}
+
+.tab-topbar-right {
+  align-items: center;
+  display: flex;
+  margin-right: 8px;
+}
+
+.tab-topbar-log {
+  padding: 4px 15px;
+  margin-left: 16px;
+  font-size: 14px;
+  line-height: 22px;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+  cursor: pointer;
+}
+
+.tab-topbar-add {
+  padding: 5px 15px;
+  margin-left: 8px;
+  line-height: 22px;
+  color: #fff;
+  background-color: #1890ff;
+  cursor: pointer;
+}
+
+.tab-topbar-actions {
+  gap: 8px;
+  display: flex;
+  margin-left: 16px;
+}
+
+.tab-topbar-action {
+  cursor: pointer;
+}
+
+.table-wrapper {
+  padding: 0 24px;
+  margin: 0 24px 24px;
+  background-color: #fff;
+}
+
+.table-result {
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 14px;
+  line-height: 22px;
+  background-color: #fff;
+}
+
+/* 单元格，各行，各列设置样式 */
+.table-result__head tr,
+.table-result tbody tr {
+  border-bottom: 1px solid #f7f7f7;
+}
+
+.table-result thead tr th,
+.table-result tbody tr td {
+  height: 55px;
+  box-sizing: border-box;
+  text-align: left;
+  vertical-align: middle;
+  background-color: #fafafa;
+}
+
+.table-result tbody tr td {
+  background-color: #fff;
+}
+
+.table-result thead tr th {
+  font-weight: bold;
+}
+
+/* 各个元素特异化格式样式 */
+
+.table-result__calls-container,
+.table-result__time-container {
+  align-items: center;
+  display: inline-flex;
+}
+
+.table-result__calls-icon,
+.table-result__time-icon {
+  margin-left: 8px;
+}
+
+.table-result__radio-container {
+  display: flex;
+  width: 16px;
+  padding: 8px 16px;
+  padding-right: 0;
+}
+
+.table-result__radio-input {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+}
+
+.table-result tbody tr td:nth-child(2),
+.table-result tbody tr td:nth-child(7) {
+  color: #1890ff;
+}
+
+.table-result__status-container {
+  display: inline-flex;
+  align-items: center;
+}
+
+.status-icon {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  margin-right: 8px;
+  border-radius: 50%;
+}
+
+.status-online {
+  background-color: #52C41A;
+}
+
+.status-offline {
+  background-color: #D9D9D9;
+}
+
+.status-error {
+  background-color: #FF4D4F;
+}
+
+.status-running {
+  background-color: #1890ff;
+}
+
+.table-result__action .seprate {
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  margin: 0 8px;
+  background-color: #f0f0f0;
+}
+
+.table-pagination {
+  align-items: center;
+  justify-content: flex-end;
+  display: flex;
+}
+
+.table-pagination__list {
+  gap: 8px;
+  display: flex;
+  margin: 0 16px;
+}
+
+.table-pagination__item {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 32px;
+  height: 32px;
+  box-sizing: border-box;
+  border: 1px solid #d9d9d9;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.table-pagination__number {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  border: 1px solid #d9d9d9;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.table-pagination__number-arrow {
+  margin-left: 6px;
+}

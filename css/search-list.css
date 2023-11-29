@@ -1,20 +1,14 @@
 .click-content-item {
+  flex: 1;
   display: none;
+  overflow-y: auto;
 }
 
 .click-content-item.active {
   display: block;
 }
 
-.article-section,
-.project-section,
-.application-section {
-  flex: 1;
-  overflow-y: auto;
-}
-
-.article-section::-webkit-scrollbar,
-.project-section::-webkit-scrollbar {
+.click-content-item::-webkit-scrollbar {
   width: 0;
 }
 
@@ -54,44 +48,6 @@
 
 .workplace-search__submit-icon {
   margin-right: 8px;
-}
-
-.sider-item__option.active.level-2 {
-  align-items: center;
-  justify-content: space-between;
-  display: flex;
-  background-color: transparent;
-  border: none;
-}
-
-.sider-item__option-arrow {
-  margin-right: 15px;
-}
-
-.sider-item__option.active .sider-item__option-arrow {
-  transform: rotate(180deg);
-}
-
-.sider-item__option-selects {
-  flex-direction: column;
-  display: flex;
-  row-gap: 8px;
-}
-
-.sider-item__option-select {
-  align-items: center;
-  display: flex;
-  height: 40px;
-  padding-left: 64px;
-  font-size: 14px;
-  line-height: 22px;
-  white-space: nowrap;
-}
-
-.sider-item__option-select.active {
-  color: #1890FF;
-  background-color: #E6F7FF;
-  border-right: 3px solid #1890FF;
 }
 
 .workplace-listtitles {
